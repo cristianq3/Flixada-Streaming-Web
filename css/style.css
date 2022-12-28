@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* ESTILOS GENERALES */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+
+/* CARDS contenedores de Peliculas*/
+
+/* Sombra Redondeada Para banners y containers*/
+.sombraRedondeada {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.503);
+  padding: 0;
+}
+
+/* BARRA DE NAVEGACION  (NAVBAR) */
+
+/* Logo FLIXADA Con gradientes*/
+.logoFlixada {
+  font-family: "Righteous", cursive;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#00ffd5, #57dfb7, #04ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logoFlixadaDelFooter {
+  font-family: "Righteous", cursive;
+  font-size: 35px;
+  color: wi;
+}
+
+/* Color de los links activos  */
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #1db7d5;
+}
+
+
+/* FOOTER */
+
+.bg-footer {
+  background-color: #74ebd5;
+  /*background-image: linear-gradient(0deg, #22585afa 0%, #76eaff 100%); */
+  background: -webkit-linear-gradient(#016f41fc, #57dfb7, #008475e5);
+}
+
+.textoFooter {
+  font-size: medium;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(3, 3, 3);
+}
+
+.inconosRedesSociales a {
+  color: #243532;
+}
+
+/*Banner Navidad de Pagina Inicio */
+.navidad p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
+
+/* Dispositivos SMALL */
+
+@media all and (max-width: 576px) {
+  nav .navFija {
+    position: relative;
+  }
+
+  
+}
+
+/* Dispositivos MEDIUM (TABLETS) */
+
+@media all and (min-width: 577px) and (max-width: 991px) {
+}
+
+/* Dispositivos Large en adelante PC, TV, etc */
+
+@media all and (min-width: 992x) {
+}
