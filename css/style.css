@@ -38,16 +38,15 @@ main {
 /* Color de los links activos  */
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
-  color: #1db7d5;
+  color: #57dfb7;
 }
-
 
 /* FOOTER */
 
 .bg-footer {
   background-color: #74ebd5;
   /*background-image: linear-gradient(0deg, #22585afa 0%, #76eaff 100%); */
-  background: -webkit-linear-gradient(#016f41fc, #57dfb7, #008475e5);
+  background: -webkit-linear-gradient(#00bc7dfc, #57dfb7, #3b9fb5e5);
 }
 
 .textoFooter {
@@ -83,8 +82,6 @@ footer a {
   nav .navFija {
     position: relative;
   }
-
-  
 }
 
 /* Dispositivos MEDIUM (TABLETS) */
