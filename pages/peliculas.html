@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Plataforma Streaming Flixada" />
+    <meta name="description" content="Banca Online Rollingbank" />
     <meta
       name="keywords"
       content="Streaming, Videos, series, peliculas, documentales,video ondemand"
@@ -20,15 +20,17 @@
 
     <title>Streaming</title>
   </head>
-  <body class="mt-5 pt-2 bg-dark">
+  <body>
     <header>
       <!-- Barra de Navegacion  -->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <nav
+        class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top p-0 m-0"
+      >
         <div class="container">
           <a class="navbar-brand" href="/index.html">
-            <div class="text-center me-auto">
-              <i class="bi bi-cast me-2"></i>
-              Strem<b class="text-info">o</b>
+            <div class="text-center me-auto fw-bolder fs-1 logoFlixada">
+              <i class="bi bi-camera-reels"></i>
+              flixada
             </div>
           </a>
 
@@ -45,29 +47,21 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                <a class="nav-link pt-2" href="/pages/series.html">Series</a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html"
-                  >Inicio</a
-                >
+                <a class="nav-link" href="/pages/peliculas.html">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error404.html">
+                  <i class="bi bi-search"></i>
+                </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" href="/pages/categorias.html"
-                  >Categorias</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/series.html">Series</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/pages/peliculas.html">Peliculas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link p-1 ps-" href="/pages/login.html"
-                  ><button type="button" class="btn btn-outline-info p-1 m-0">
+                  ><button type="button" class="btn btn-dark p-1 m-0">
                     Ingresar
                   </button></a
                 >
@@ -77,138 +71,85 @@
         </div>
       </nav>
     </header>
-    <main>
-      <!-- Categorias-->
-      <section class="container pt-4">
-        <h1 class="text-info-light pb-5">Categorias</h1>
-        <!--Miniaturas PELIS-->
-        <div class="row ">
-          
-          <div class="col col-md-4 col-lg-2 position-relative">
-            <i class="bi bi-play text-white position-absolute"></i>
-            <div class="card cardPelis">
-              <p class="pt-1 fw-lighter text-white">Spiderman: Homecoming</p>
-              <img
-                src="/img/carrusel/dale-play.JPG"
-                class="rounded-4"
-                alt="Spiderman homecoming"
-              />
-              <div>
-                <div class="d-flex justify-content-evenly align-items-center ">
-                  <a href="/pages/" class="btn btn-info btn-sm m-1 rounded-3"
-                    ><i class="bi bi-play text-white fs-4 rounded-5"></i> </a
-                  >
-                  <a href="/pages/" class="text-white">+info</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main class="bg-dark">
 
-<section></section>
-
-
-
-
-
-
-
+        
     </main>
-    <!--Pie de Pagina-->
+    
+    <!--Pie de Pagina NO MODIFICAR NADA!!-->
     <footer class="bg-dark">
       <section class="container bg-footer rounded-4">
         <!--Seccion de Links y Redes Sociales-->
-        <div
-          class="row d-flex justify-content-evenly align-content-center align-items-center"
-        >
-          <div
+        <section class="row d-flex justify-content-evenly align-items-top">
+          <!-- REDES SOCIALES-->
+          <aside
             class="col-12 col-sm-3 d-flex flex-column align-items-center p-3"
           >
-            <a class="text-decoration-none" href="index.html">
-              <div class="text-center text-dark fs-1">
-                <i class="bi bi-cast me-1 text-dark"></i>
-                Stream<b class="text-white">o</b>
+            <a class="navbar-brand" href="/index.html">
+              <div class="text-center me-auto fw-bold logoFlixadaDelFooter">
+                <i class="bi bi-camera-reels"></i>
+                flixada
               </div>
-              <a class="nav-link p-1 ps-" href="/pages/suscripcion.html"
-                ><button
-                  type="button"
-                  class="btn btn-outline-dark p-2 mt-1 mb-1"
-                >
-                  <b>Suscribete Ya!</b>
-                </button></a
-              >
             </a>
-            <div pt-3>
-              <p class="fs-7">Seguinos en nuestras redes</p>
-              <i class="bi bi-facebook text-white fs-2"></i>
-              <i class="bi bi-twitter text-white pe-3 ps-3 fs-2"></i>
-              <i class="bi bi-instagram text-white fs-2"></i>
-              <i class="bi bi-youtube text-white fs-2 ps-3"></i>
+            <a class="nav-link p-1 ps-" href="/pages/suscripcion.html"
+              ><button type="button" class="btn btn-outline-dark p-2 mt-3 mb-3">
+                <b>Suscribete Ya!</b>
+              </button></a
+            >
+
+            <div class="text-center inconosRedesSociales">
+              <p class="bold">Seguinos en nuestras redes</p>
+
+              <a href="/pages/error404.html"
+                ><i class="bi bi-facebook "></i>
+              </a>
+              <a href="/pages/error404.html">
+                <i class="bi bi-twitter  pe-3 ps-3"></i>
+              </a>
+              <a href="/pages/error404.html"
+                ><i class="bi bi-instagram "></i>
+              </a>
+              <a href="/pages/error404.html"
+                ><i class="bi bi-youtube  ps-3"></i>
+              </a>
             </div>
-          </div>
-          <div
+          </aside>
+
+          <!--NAVEGACION-->
+          <aside
             class="col-12 col-sm-3 d-flex flex-column align-items-center p-2"
           >
-            <ul class="list-unstyled">
+            <ul class="list-unstyled text-center text-md-start m-md-5">
               <h6 class="text-dark">Navegación</h6>
               <li><a href="/pages/nosotros.html">Acerca de Nosotros</a></li>
               <li><a href="/pages/contacto.html">Contacto</a></li>
               <li><a href="/pages/categorias.html">Categorias</a></li>
               <li><a href="/pages/peliculas.html">Peliculas</a></li>
             </ul>
-          </div>
-          <div
+          </aside>
+          <!--ACERCA DE-->
+          <aside
             class="col-12 col-sm-3 d-flex flex-column align-items-center p-2"
           >
-            <ul class="list-unstyled">
+            <ul class="list-unstyled text-center text-md-start m-md-5">
               <h6 class="text-dark">Acerca de</h6>
               <li><a href="/pages/error404.html">Legales</a></li>
               <li><a href="/pages/error404.html">Politica de privacidad</a></li>
               <li><a href="/pages/error404.html">Reclamos</a></li>
               <li><a href="/pages/error404.html">Ayuda</a></li>
             </ul>
-          </div>
-          <div
-            class="col-12 col-md-12 col-lg-3 d-flex flex-column align-items-center p-3"
-          >
-            <ul class="list-unstyled">
-              <h6 class="text-dark">Descargá la App</h6>
-              <div
-                class="d-flex justify-content-evenly flex-column flex-md-row flex-lg-column"
-              >
-                <div>
-                  <a href="http://www.applestore.com" target="blank">
-                    <img
-                      src="img/badge-apple-store.svg"
-                      class="img-fluid p-2"
-                      alt="apple store"
-                    />
-                  </a>
-                </div>
-                <div>
-                  <a href="http://www.googleplay.com" target="blank">
-                    <img
-                      src="img/google-play-badge-bb.svg"
-                      class="img-fluid p-2"
-                      alt="logo google play"
-                    />
-                  </a>
-                </div>
-              </div>
-            </ul>
-          </div>
-        </div>
+          </aside>
+        </section>
       </section>
 
       <!-- SECCION DE CREDITOS DEL FOOTER-->
 
-      <section class="text-info-light bg-dark">
+      <section class="text-secondary bg-dark">
         <div class="textoFooter text-center">
           <p>
-            Los servicios que presta Streamo S.A. están sujetos a disponibilidad
-            técnica - © 2022 Stream<b>o</b>- Todos los derechos reservados -
-            General Paz 657 Piso 9
+            Los servicios que presta Flixada S.A. están sujetos a disponibilidad
+            técnica - © 2022 <a href="/index.html"></a><b>Flixada</b> - Todos los
+            derechos reservados - Avenida Siempre Viva 742 - S.M. de Tucumán
           </p>
         </div>
       </section>
