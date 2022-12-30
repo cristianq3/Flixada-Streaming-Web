@@ -1,17 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 /* ESTILOS GENERALES */
-
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 main {
   flex-grow: 1;
+  margin-top: 58px;
 }
 
-/* CARDS contenedores de Peliculas*/
+/* CARDS contenedores de Peliculas */
+
+.fondoTransparenteCard img {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.503);
+  padding: 0;
+}
+
+.fondoTransparenteCard :hover {
+  filter: brightness(140%);
+}
+
+.colorTextoCard:hover {
+  color: #129797b6;
+}
+
+.colorTextoCard {
+  color: #f6f8f7b6;
+
+  font-size: small;
+  border-radius: 10px;
+}
 
 /* Sombra Redondeada Para banners y containers*/
 .sombraRedondeada {
@@ -32,20 +53,38 @@ main {
 .logoFlixadaDelFooter {
   font-family: "Righteous", cursive;
   font-size: 35px;
-  color: wi;
 }
 
 /* Color de los links activos  */
+
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
   color: #57dfb7;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  color: #fafafa;
+}
+
+/* Display de Formularios para que se vea bien en SM*/
+
+.formBuscar {
+  align-self: center;
+}
+
+.form-control {
+  color: #ffffff;
+}
+
+.formBuscar1 {
+  display: none;
 }
 
 /* FOOTER */
 
 .bg-footer {
   background-color: #74ebd5;
-  /*background-image: linear-gradient(0deg, #22585afa 0%, #76eaff 100%); */
   background: -webkit-linear-gradient(#00bc7dfc, #57dfb7, #3b9fb5e5);
 }
 
@@ -63,6 +102,10 @@ footer a {
   color: #243532;
 }
 
+.inconosRedesSociales a:hover {
+  color: #009499;
+}
+
 /*Banner Navidad de Pagina Inicio */
 .navidad p {
   font-size: 24px;
@@ -73,20 +116,77 @@ footer a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* Estilos propios de la PAGINA DE LOGIN login.html*/
+.formLogin {
+  align-self: center;
+  width: 30%;
+
+  padding-top: 10%;
+
+  margin-bottom: 10%;
+}
+
+.bgHeaderFormLogin {
+  border: #00ffd5 solid 1px;
+}
 
 /* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
 
 /* Dispositivos SMALL */
 
 @media all and (max-width: 576px) {
+  /* Estilos generales*/
+
+  main {
+    margin-top: 45px;
+  }
+
+  /* Navbar */
   nav .navFija {
     position: relative;
   }
+  /* Formularios Responsivos SMALL*/
+  .formBuscar1 {
+    display: block;
+  }
+  .formBuscar2 {
+    display: none;
+  }
+
+  .formLogin {
+    align-self: center;
+    width: 100%;
+
+    padding-top: 18px;
+    margin-bottom: 10%px;
+  }
+  /*Cards Responsivas */
 }
 
 /* Dispositivos MEDIUM (TABLETS) */
 
 @media all and (min-width: 577px) and (max-width: 991px) {
+  /* Estilos generales*/
+  main {
+    padding-top: 55px;
+  }
+
+  /* Formularios Responsivos TABLETS */
+  .formBuscar1 {
+    display: block;
+  }
+  .formBuscar2 {
+    display: none;
+  }
+
+  .formLogin {
+    margin-top: auto;
+    align-self: center;
+    width: 50%;
+
+    padding-top: 12vh;
+    margin-bottom: 10%px;
+  }
 }
 
 /* Dispositivos Large en adelante PC, TV, etc */
