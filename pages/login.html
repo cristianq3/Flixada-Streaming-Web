@@ -94,7 +94,11 @@
 
               <li class="nav-item">
                 <a class="nav-link p-1 ps-" href="/pages/login.html"
-                  ><button type="button" class="btn btn-dark p-1 m-0">
+                  ><button
+                    type="button"
+                    id="botonIngresar"
+                    class="btn btn-dark p-1 m-0"
+                  >
                     Ingresar
                   </button></a
                 >
@@ -108,33 +112,37 @@
     <main class="bg-dark">
       <section class="text-center text-white container formLogin">
         <div
-          class="mt-5 container border-1 text-white bgHeaderFormLogin rounded-4 sombraRedondeada"
+          class="container text-white bgHeaderFormLogin rounded-4 sombraRedondeada"
         >
-          <h1 class="p-2 h4">Ingreso</h1>
+          <h1 class="pt-3 h4 letraLogoPrincipal">Ingreso</h1>
           <form class="d-flex align-items-end align-items-center flex-column">
             <div class="mb-3 mt-3 d-flex flex-column align-items-start">
               <input
                 type="email"
-                class="form-control-lg"
+                class="form-control form-control bg-dark rounded-5"
                 id="email"
-                placeholder="Ingresa tu mail"
+                placeholder="e-mail"
                 name="email"
+                maxlength="80"
+                minlength="6"
               />
             </div>
-            <div class="">
+            <div>
               <div class="mb-3 d-flex flex-column align-items-start">
                 <input
                   type="password"
-                  class="form-control-lg"
+                  class="form-control form-control bg-dark rounded-5"
                   id="pwd"
-                  placeholder="Ingresá tu contraseña"
+                  maxlength="50"
+                  minlength="2"
+                  placeholder="contraseña"
                   name="pswd"
                 />
               </div>
             </div>
 
-            <div class="d-flex flex-row">
-              <div class="form-check mb-2 me-5">
+            <div class="d-flex flex-row mb-5">
+              <div class="form-check my-auto me-4">
                 <label class="form-check-label">
                   <input
                     class="form-check-input"
@@ -144,7 +152,10 @@
                   Recuérdame
                 </label>
               </div>
-              <button type="submit" class="btn btn-info btn-sm">
+              <button
+                type="submit"
+                class="btn btn-outline-secondary rounded-4 btn-sm"
+              >
                 Ingresar
               </button>
             </div>
@@ -152,9 +163,9 @@
             <p class="text-secondary">
               No eres usuario?
               <a
-                class="fs-5 text-decoration-none text-white link-info"
+                class="fs-5 text-decoration-none letraLogoPrincipal colorDeFlow"
                 href="/pages/suscripcion.html"
-                >Suscribite Acá!
+                >Suscríbete Acá!
               </a>
             </p>
           </form>

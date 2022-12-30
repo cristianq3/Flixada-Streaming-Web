@@ -50,6 +50,16 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.colorDeFlow {
+  color: #57dfb7;
+}
+
+.letraLogoPrincipal {
+font-family:"Righteous", cursive;
+}
+
+
 .logoFlixadaDelFooter {
   font-family: "Righteous", cursive;
   font-size: 35px;
@@ -64,10 +74,10 @@ main {
 
 input[type="text"]:focus,
 textarea:focus {
-  color: #fafafa;
+  color: #ffffff;
 }
 
-/* Display de Formularios para que se vea bien en SM*/
+/* Display de Formularios del NAVBAR para que se vea bien en SMALL*/
 
 .formBuscar {
   align-self: center;
@@ -106,6 +116,9 @@ footer a {
   color: #009499;
 }
 
+.text-dark {
+  font-weight: bolder;
+}
 /*Banner Navidad de Pagina Inicio */
 .navidad p {
   font-size: 24px;
@@ -116,18 +129,27 @@ footer a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* Estilos propios de la PAGINA DE LOGIN login.html*/
+/* Estilos propios de la PAGINA DE LOGIN login.html */
 .formLogin {
   align-self: center;
-  width: 30%;
-
+  width: 350px;
   padding-top: 10%;
-
   margin-bottom: 10%;
 }
 
+
+
+input[type="email"]:focus,
+textarea:focus {
+  color: #ffffff;
+}
+input[type="password"]:focus,
+textarea:focus {
+  color: #ffffff;
+}
+
 .bgHeaderFormLogin {
-  border: #00ffd5 solid 1px;
+  border: #00ffff29 solid 1px;
 }
 
 /* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
