@@ -48,6 +48,7 @@ main {
   font-size: 72px;
   background: -webkit-linear-gradient(#00ffd5, #57dfb7, #04ffd5);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -56,9 +57,8 @@ main {
 }
 
 .letraLogoPrincipal {
-font-family:"Righteous", cursive;
+  font-family: "Righteous", cursive;
 }
-
 
 .logoFlixadaDelFooter {
   font-family: "Righteous", cursive;
@@ -136,8 +136,6 @@ footer a {
   padding-top: 10%;
   margin-bottom: 10%;
 }
-
-
 
 input[type="email"]:focus,
 textarea:focus {
