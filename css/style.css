@@ -12,6 +12,14 @@ main {
   margin-top: 58px;
 }
 
+/* Sugerencia para incluir en estilos generales: textos del color del logo*/
+.textoFlow{
+  color:#00bc7dfc
+}
+.textoBlanco{
+  color: #f6f8f7b6
+}
+
 /* CARDS contenedores de Peliculas */
 
 .fondoTransparenteCard img {
@@ -30,7 +38,7 @@ main {
 .colorTextoCard {
   color: #f6f8f7b6;
 
-  font-size: small;
+  font-size: large;
   border-radius: 10px;
 }
 
@@ -38,6 +46,7 @@ main {
 .sombraRedondeada {
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.503);
   padding: 0;
+ 
 }
 
 /* BARRA DE NAVEGACION  (NAVBAR) */
@@ -46,7 +55,7 @@ main {
 .logoFlixada {
   font-family: "Righteous", cursive;
   font-size: 72px;
-  background: -webkit-linear-gradient(#00ffd5, #57dfb7, #04ffd5);
+  background: -webkit-linear-gradient(#00ffd5, #1e9672, #04ffd5);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -91,6 +100,46 @@ textarea:focus {
   display: none;
 }
 
+.page-link {
+  background-color: #74ebd5;
+}
+
+
+/* Para DETALLE pelicula y serie */
+
+.listaDetalle{
+  list-style: none;
+}
+
+.botonReproducir{
+  font-size: large;
+  color: #00ffd5;
+}
+.efectoReproducir:hover{
+  color: #00ffd5;
+}
+.imgFleabag{
+  width: 2000x;
+}
+.imgTheThing{
+  width: 2000px;
+}
+.tituloEpisodios{
+  font-size: 25px;
+  font-weight: 400;
+}
+.tituloEpisodio{
+  font-size: 22px;
+  font-weight: 600;
+}
+.textoEpisodio{
+  font-size: 18px;
+}
+.botonVerEpisodio{
+  font-size: large;
+  color: #00ffd5;
+}
+
 /* FOOTER */
 
 .bg-footer {
@@ -119,16 +168,7 @@ footer a {
 .text-dark {
   font-weight: bolder;
 }
-/*Banner Navidad de Pagina Inicio */
-.navidad p {
-  font-size: 24px;
-  color: white;
-  text-align: center;
-  position: relative;
-  bottom: 60px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 /* Estilos propios de la PAGINA DE LOGIN login.html */
 .formLogin {
   align-self: center;
@@ -149,6 +189,46 @@ textarea:focus {
 .bgHeaderFormLogin {
   border: #00ffff29 solid 1px;
 }
+
+/* ESTILOS DE LA PAGINA SUSCRIPCION.html*/
+
+.cardPrecioSuscripcion {
+  max-width: 18rem;
+
+  border-radius: 10%;
+  height: 25rem;
+  border: #00ffff29 solid  1px;
+ margin-right: 5px;
+ margin-left: 5px;
+
+ background-color: #74ebd5;
+  background: -webkit-linear-gradient(#10df9acd, #2f9f81, #3b9fb5e5);
+/*
+ background-image: url(/img/fondo-card-pricing.png) ; */
+
+ 
+}
+
+.cardPrecioSuscripcion:hover {
+
+  filter: brightness(1.1);
+  
+  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
 
@@ -181,6 +261,10 @@ textarea:focus {
     margin-bottom: 10%px;
   }
   /*Cards Responsivas */
+  /* letras card*/
+  .colorTextoCard {
+    font-size: x-small;
+      }
 }
 
 /* Dispositivos MEDIUM (TABLETS) */
@@ -206,6 +290,15 @@ textarea:focus {
 
     padding-top: 12vh;
     margin-bottom: 10%px;
+  }
+
+
+  /* Letra de las cards de peliculas */ 
+  .colorTextoCard {
+    
+  
+    font-size: large;
+    
   }
 }
 
