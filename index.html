@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Banca Online Rollingbank" />
-    <meta
-      name="keywords"
-      content="Streaming, Videos, series, peliculas, documentales,video ondemand"
-    />
-    <meta name="author" content="Grupo 4 comision41i RollingCode" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-
-    <title>Ingreso - Streaming</title>
+    <meta name="author" content="Equipo 4 - Comisión 41i - Rolling Code">
+    <meta name="description" content="Con Flixada disfruta de las mejores series y peliculas. Suscribete ahora y cancela cuando quieras."/>
+    <meta name="keywords" content="Streaming, Videos, series, peliculas, documentales,video ondemand"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="img/icons/logo-flixada.svg"/>
+    <title>flixada</title>
   </head>
   <body>
     <header>
       <!-- Barra de Navegacion No Modificar nada -->
-      <nav
-        class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top p-0 m-0"
-      >
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top p-0 m-0">
         <!--LOGO FLIXADA-->
         <div class="container d-flex">
-          <a class="navbar-brand" href="/index.html">
+          <a class="navbar-brand" href="index.html">
             <div class="text-center fw-bolder fs-1 logoFlixada">
               <i class="bi bi-camera-reels"></i>
               flixada
@@ -36,26 +27,13 @@
           </a>
 
           <!--Boton Hamburguesa oculto en pantallas grandes-->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarContenido"
-            aria-controls="navbarContenido"
-            aria-expanded="true"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <!--Boton Buscar fuera del Navbar Oculto en Celulares y Tablet-->
           <form class="formBuscar2 formBuscar">
             <div class="input-group">
-              <input
-                type="text"
-                class="form-control form-control-sm bg-dark rounded-5"
-                placeholder="Buscar"
-                maxlength="125"
-              />
+              <input type="text" class="form-control form-control-sm bg-dark rounded-5" placeholder="Buscar" maxlength="125"/>
               <div class="input-group-append">
                 <button class="btn" type="submit">
                   <i class="bi bi-search text-secondary"></i>
@@ -70,12 +48,7 @@
                 <!-- Boton Buscar dentro del Navbar oculto para dispositivos Large-->
                 <form class="formBuscar1">
                   <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control form-control-sm bg-dark rounded-5"
-                      placeholder="Buscar"
-                      maxlength="125"
-                    />
+                    <input type="text" class="form-control form-control-sm bg-dark rounded-5" placeholder="Buscar" maxlength="125"/>
                     <div class="input-group-append">
                       <button class="btn" type="submit">
                         <i class="bi bi-search text-secondary"></i>
@@ -86,18 +59,16 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link pt-2" href="/pages/series.html">Series</a>
+                <a class="nav-link pt-2" href="pages/series.html">Series</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/peliculas.html">Peliculas</a>
+                <a class="nav-link" href="pages/peliculas.html">Peliculas</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link p-1 ps-" href="/pages/login.html"
-                  ><button type="button" class="btn btn-dark p-1 m-0">
-                    Ingresar
-                  </button></a
-                >
+                <a class="nav-link p-1 ps-" href="pages/login.html">
+                  <button type="button" class="btn btn-dark p-1 m-0">Ingresar</button>
+                </a>
               </li>
             </ul>
           </div>
@@ -107,228 +78,219 @@
 
     <main class="bg-dark">
       <!--CARRUSEL CON SLIDER BANNER PRINCIPAL  -->
-      <section class="bg-dark container pt-3 mb-4">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide container carousel-fade"
-          data-bs-ride="false"
-        >
+      <section class="bg-dark container my-4">
+        <div id="carouselExampleCaptions" class="carousel slide container carousel-fade" data-bs-ride="false">
           <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner rounded-4 sombraRedondeada">
             <div class="carousel-item active">
-              <img
-                src="/img/carrusel/white-lotus.jpg"
-                class="d-block w-100"
-                alt="Spiderman No way home"
-              />
+              <video src="video/Gato con botas3.mp4" class="d-block w-100" autoplay loop></video>
+              
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
+                <h5>Gato Con Botas</h5>
+                <p>Un felino legendario en busca de su mayor tesoro: la gansa dorada</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="/img/carrusel/house-of-dragon.jpg"
-                class="d-block w-100"
-                alt="la casa del dragon"
-              />
+              <video src="video/Logan3.mp4" class="d-block w-100" autoplay loop></video>
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
+                <h5>Logan</h5>
+                <p>Logan y el Profesor X conocen una joven mutante que es perseguida</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="/img/carrusel//the-mandalorian.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
+              <video src="video/WandaVision3.mp4" class="d-block w-100" autoplay loop></video>
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/img/carrusel/twin-peaks.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/img/carrusel/white-lotus.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
+                <h5>WandaVision</h5>
+                <p>Una pareja de superhéroes con una vida aparentemente ideal empieza a sospechar de la realidad</p>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </section>
-      -->
 
-      <!--BANNER CON TEMATICA NAVIDEÑA   
-      <section class="container mt-1 mb-4">
-        <div class="row navidad p-2">
-          <img
-            src="img/carrusel/dale-play.JPG"
-            class="rounded-4 sombraRedondeada p-0"
-            alt="Series y peliculas navideñas"
-          />
-          <p class="text-white display-3">
-            Las mejores series y peliculas navideñas
-          </p>
-          <div class="col"></div>
-        </div>
-      </section>
-      -->
+      <!-- SECCION MIRA EN TODOS LOS DISPOSITIVOS-->
+
+    
 
       <!-- CARDS CONTENEDORES DE PELICULAS-->
       <section class="container">
-        <h2 class="display-5 text-white pt-3">Categorias</h2>
+        <h2 class="display-5 text-white pt-3">Películas Recomendadas</h2>
 
         <article class="row mx-2">
           <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
-            <a href="/pages/error404.html" class="text-decoration-none">
+            <a href="pages/error404.html" class="text-decoration-none">
               <div class="fondoTransparenteCard">
-                <h5 class="text-center colorTextoCard mt-1">Ciencia Ficción</h5>
-                <img
-                  class="card-img-top rounded-5 img-fluid"
-                  src="/img/cards-categorias/categoria-cficcion.jpg"
-                  alt="Ciencia Ficcion"
-                />
+                <img class="card-img-top rounded-5 img-fluid" src="img/cards-peliculas/argentina-1985.jpg" alt="Portada de la película Argentina 1985"/>
               </div>
-             
-            </a>
-          </aside>
-
-          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover ">
-            <a href="/pages/error404.html" class="text-decoration-none">
-              <div class="fondoTransparenteCard">
-                <h5 class="text-center colorTextoCard mt-1">Animacion</h5>
-                <img
-                  class="card-img-top rounded-5 img-fluid "
-                  src="/img/cards-categorias/categoria-animacion.jpg"
-                  alt="Animacion"
-                />
-              </div>
-             
+              <h5 class="text-center colorTextoCard mt-1">Argentina 1985</h5>
             </a>
           </aside>
 
           <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
-            <a href="/pages/error404.html" class="text-decoration-none">
+            <a href="pages/error404.html" class="text-decoration-none">
               <div class="fondoTransparenteCard">
-                <h5 class="text-center colorTextoCard mt-1">Comedia</h5>
-                <img
-                  class="card-img-top rounded-5 img-fluid "
-                  src="/img/cards-categorias/categoria-comedia (1).jpg"
-                  alt="Comedia"
-                />
+                <img class="card-img-top rounded-5 img-fluid" src="img/cards-peliculas/batman.jpg" alt="Portada de la película Batman Inicia"/>
               </div>
-             
+              <h5 class="text-center colorTextoCard mt-1">Batman Inicia</h5>
             </a>
           </aside>
+
           <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
-            <a href="/pages/error404.html" class="text-decoration-none">
+            <a href="pages/error404.html" class="text-decoration-none">
               <div class="fondoTransparenteCard">
-                <h5 class="text-center colorTextoCard mt-1">Drama</h5>
-                <img
-                  class="card-img-top rounded-5 img-fluid"
-                  src="/img/cards-categorias/categoria-drama.jpg"
-                  alt="Drama"
-                />
+                <img class="card-img-top rounded-5 img-fluid" src="img/cards-peliculas/her.jpg" alt="Portada de la película Her"/>
               </div>
-             
+              <h5 class="text-center colorTextoCard mt-1">Her</h5>
             </a>
           </aside>
 
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="pages/error404.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <img class="card-img-top rounded-5 img-fluid" src="img/cards-peliculas/lalaland.jpg" alt="Portada de la película La La Land"/>
+              </div>
+              <h5 class="text-center colorTextoCard mt-1">La La Land</h5>
+            </a>
+          </aside>
 
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="pages/error404.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <img class="card-img-top rounded-5 img-fluid" src="img/cards-peliculas/parasite.jpg" alt="Portada de la película Parasite"/>
+              </div>
+              <h5 class="text-center colorTextoCard mt-1">Parasite</h5>
+            </a>
+          </aside>
 
-          
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="pages/error404.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <img class="card-img-top rounded-5 img-fluid" src="img/cards-peliculas/superbad.jpg" alt="Portada de la película Superband"/>
+              </div>
+              <h5 class="text-center colorTextoCard mt-1">Superbad</h5>
+            </a>
+          </aside>
 
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="/pages/info-detallada/detalle-pelicula.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <img class="card-img-top rounded-5 img-fluid" src="img/cards-peliculas/the-thing.jpg" alt="Portada de la película The Thing"/>
+              </div>
+              <h5 class="text-center colorTextoCard mt-1">The Thing</h5>
+            </a>
+          </aside>
 
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="pages/error404.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <img class="card-img-top rounded-5 img-fluid" src="img/cards-peliculas/top-gun.jpg" alt="Portada de la película Top Gun"/>
+              </div>
+              <h5 class="text-center colorTextoCard mt-1">Top Gun</h5>
+            </a>
+          </aside>
+        </article>
+      </section>
+<!--SECCION MIRA EN CUALQUIER DISPOSITIVO-->
+      <section class="pt-5 pb-5 text-center text-info container mb-2">
+        <article class="container display-4 text-info-light">
+          <p class="text-white">Podes disfrutar en todos tus dispositivos</p>
 
-
-
-
-
+          <div class="colorDeFlow fs-1">
+            <i class="bi bi-tv mx-3"></i>
+            <i class="bi bi-phone mx-3"></i>
+            <i class="bi bi-laptop mx-3"></i>
+            <i class="bi bi-tablet mx-3" id="formSuscripcion"></i>
+          </div>
         </article>
       </section>
 
-      <!--Banner DESCARGA DE LA APP -->
-      <section class="bg-secondary pt-5 pb-5 text-center text-info sombraRedondeada rounded-5 container mb-2">
+      <section class="container">
+        <h2 class="display-5 text-white pt-3">Categorías</h2>
+        <article class="row mx-2">
+
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="/pages/categorias/categorias-ciencia-ficcion1.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <h5 class="text-center colorTextoCard mt-1">Ciencia Ficción</h5>
+                <img class="card-img-top rounded-1 img-fluid" src="img/cards-categorias/categoria-cficcion.jpg" alt="Portada con películas de categoria ciencia ficción"/>
+              </div>
+              
+            </a>
+          </aside>
+
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="/pages/categorias/categorias-comedia1.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <h5 class="text-center colorTextoCard mt-1">Comedia</h5>
+                <img class="card-img-top rounded-1 img-fluid" src="img/cards-categorias/categoria-comedia (1).jpg" alt="Portada con películas de categoria comedia"/>
+              </div>
+           
+            </a>
+          </aside>
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="pages/error404.html" class="text-decoration-none">
+              <h5 class="text-center colorTextoCard mt-1">Animación</h5>
+              <div class="fondoTransparenteCard">
+                <img class="card-img-top rounded-1 img-fluid" src="img/cards-categorias/categoria-animacion.jpg" alt="Portada con películas de categoria animación"/>
+              </div>
+             
+            </a>
+          </aside>
+
+         
+          
+        
+          
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="pages/error404.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <h5 class="text-center colorTextoCard mt-1">Drama</h5>
+                <img class="card-img-top rounded-1 img-fluid" src="img/cards-categorias/categoria-drama.jpg" alt="Portada con películas de categoria drama"/>
+              </div>
+              
+            </a>
+          </aside>
+          
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="pages/error404.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <h5 class="text-center colorTextoCard mt-1">Romanticas</h5>
+                <img class="card-img-top rounded-1 img-fluid" src="img/cards-categorias/categoria-romanticas.jpg" alt="Portada con películas de categoria romanticas"/>
+              </div>
+              
+            </a>
+          </aside>
+          
+          <aside class="my-lg-3 col-6 col-md-4 col-lg-3 mb-1 asideCardHover">
+            <a href="pages/error404.html" class="text-decoration-none">
+              <div class="fondoTransparenteCard">
+                <h5 class="text-center colorTextoCard mt-1">Terror</h5>
+                <img class="card-img-top rounded-1 img-fluid" src="img/cards-categorias/categoria-terror (1).jpg" alt="Portada con películas de categoria terror"/>
+              </div>
+            
+            </a>
+          </aside>
+        </article>
+      </section>
+
+      <!-- SECCION DESCARGA LA APP-->
+      <section
+        class="pt-5 pb-3 text-center text-info  rounded-5 container mb-3"
+      >
         <article class="container display-4 text-info-light">
-          <p class="text-white"> 
+          <p class="text-white">
             <strong class="logoFlixada">flixada</strong> con vos en todos lados
           </p>
 
@@ -342,7 +304,7 @@
             <div>
               <a href="http://www.applestore.com" target="blank">
                 <img
-                  src="img/badge-apple-store.svg"
+                  src="/img/badge-apple-store.svg"
                   class="img-fluid pb-3 m-2"
                   alt="logo apple store"
                 />
@@ -351,7 +313,7 @@
             <div>
               <a href="http://www.googleplay.com" target="blank">
                 <img
-                  src="img/google-play-badge-bb.svg"
+                  src="/img/google-play-badge-bb.svg"
                   class="img-fluid pb-3 m-2"
                   alt="logo google play"
                 />
@@ -367,59 +329,52 @@
         <!--Seccion de Links y Redes Sociales-->
         <section class="row d-flex justify-content-evenly align-items-top">
           <!-- REDES SOCIALES-->
-          <aside
-            class="col-12 col-sm-3 d-flex flex-column align-items-center p-3"
-          >
-            <a class="navbar-brand" href="/index.html">
+          <aside class="col-12 col-sm-3 d-flex flex-column align-items-center p-3">
+            <a class="navbar-brand" href="index.html">
               <div class="text-center me-auto fw-bold logoFlixadaDelFooter">
                 <i class="bi bi-camera-reels"></i>
                 flixada
               </div>
             </a>
-            <a class="nav-link p-1 ps-" href="/pages/suscripcion.html"
-              ><button type="button" class="btn btn-outline-dark p-2 mt-3 mb-3">
-                <b>Suscribete Ya!</b>
-              </button></a
-            >
+            <a class="nav-link p-1 ps-" href="pages/suscripcion.html">
+              <button type="button" class="btn btn-outline-dark p-2 mt-3 mb-3"><b>Suscribete Ya!</b></button>
+            </a>
 
             <div class="text-center inconosRedesSociales">
               <p class="bold">Seguinos en nuestras redes</p>
-
-              <a href="/pages/error404.html"><i class="bi bi-facebook"></i> </a>
-              <a href="/pages/error404.html">
+              <a href="pages/error404.html">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="pages/error404.html">
                 <i class="bi bi-twitter pe-3 ps-3"></i>
               </a>
-              <a href="/pages/error404.html"
-                ><i class="bi bi-instagram"></i>
+              <a href="pages/error404.html">
+                <i class="bi bi-instagram"></i>
               </a>
-              <a href="/pages/error404.html"
-                ><i class="bi bi-youtube ps-3"></i>
+              <a href="pages/error404.html">
+                <i class="bi bi-youtube ps-3"></i>
               </a>
             </div>
           </aside>
 
           <!--NAVEGACION-->
-          <aside
-            class="col-12 col-sm-3 d-flex flex-column align-items-center p-2"
-          >
+          <aside class="col-12 col-sm-3 d-flex flex-column align-items-center p-2">
             <ul class="list-unstyled text-center text-md-start m-md-5">
               <h6 class="text-dark">Navegación</h6>
-              <li><a href="/pages/nosotros.html">Acerca de Nosotros</a></li>
-              <li><a href="/pages/contacto.html">Contacto</a></li>
-              <li><a href="/pages/categorias.html">Categorias</a></li>
-              <li><a href="/pages/peliculas.html">Peliculas</a></li>
+              <li><a href="pages/nosotros.html">Acerca de Nosotros</a></li>
+              <li><a href="pages/contacto.html">Contacto</a></li>
+              <li><a href="pages/categorias.html">Categorias</a></li>
+              <li><a href="pages/peliculas.html">Peliculas</a></li>
             </ul>
           </aside>
           <!--ACERCA DE-->
-          <aside
-            class="col-12 col-sm-3 d-flex flex-column align-items-center p-2"
-          >
+          <aside class="col-12 col-sm-3 d-flex flex-column align-items-center p-2">
             <ul class="list-unstyled text-center text-md-start m-md-5">
               <h6 class="text-dark">Acerca de</h6>
-              <li><a href="/pages/error404.html">Legales</a></li>
-              <li><a href="/pages/error404.html">Politica de privacidad</a></li>
-              <li><a href="/pages/error404.html">Reclamos</a></li>
-              <li><a href="/pages/error404.html">Ayuda</a></li>
+              <li><a href="pages/error404.html">Legales</a></li>
+              <li><a href="pages/error404.html">Politica de privacidad</a></li>
+              <li><a href="pages/error404.html">Reclamos</a></li>
+              <li><a href="pages/error404.html">Ayuda</a></li>
             </ul>
           </aside>
         </section>
@@ -429,14 +384,10 @@
 
       <section class="text-secondary bg-dark">
         <div class="textoFooter text-center">
-          <p>
-            Los servicios que presta Flixada S.A. están sujetos a disponibilidad
-            técnica - © 2022 <a href="/index.html"></a><b>Flixada</b> - Todos
-            los derechos reservados - Avenida Siempre Viva 742 - S.M. de Tucumán
-          </p>
+          <p>Los servicios que presta Flixada S.A. están sujetos a disponibilidad técnica - © 2022 <a href="/index.html"></a><b>Flixada</b> - Todos los derechos reservados - Avenida Siempre Viva 742 - S.M. de Tucumán</p>
         </div>
       </section>
     </footer>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -172,7 +172,7 @@ footer a {
 /* Estilos propios de la PAGINA DE LOGIN login.html */
 .formLogin {
   align-self: center;
-  width: 350px;
+  width: 90%;
   padding-top: 10%;
   margin-bottom: 10%;
 }
@@ -202,10 +202,10 @@ textarea:focus {
  margin-left: 5px;
 
  background-color: #74ebd5;
-  background: -webkit-linear-gradient(#10df9acd, #2f9f81, #3b9fb5e5);
-/*
- background-image: url(/img/fondo-card-pricing.png) ; */
+  background: -webkit-linear-gradient(#10df9acd, #028041cf, #3b9fb5e5);
 
+/*
+ background-image: url(/img/fondo-card-pricing.jpg) ; */
  
 }
 
@@ -213,21 +213,7 @@ textarea:focus {
 
   filter: brightness(1.1);
   
-  
- 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
@@ -292,6 +278,29 @@ textarea:focus {
     margin-bottom: 10%px;
   }
 
+  #form-contacto{
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #form-contacto label{
+    width: 100px;
+  }
+
+  #form-contacto input{
+    width: 230px;
+  }
+
+  #form-contacto textarea{
+    width: 230px;
+    height: 130px;
+  }
+
+  #form-contacto input[type="submit"]{
+    width: 20%;
+    margin: 0 auto;
+  }
+
 
   /* Letra de las cards de peliculas */ 
   .colorTextoCard {
@@ -305,4 +314,5 @@ textarea:focus {
 /* Dispositivos Large en adelante PC, TV, etc */
 
 @media all and (min-width: 992x) {
+ 
 }
