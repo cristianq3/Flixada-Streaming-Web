@@ -17,8 +17,9 @@
     />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-
-    <title>Suscribete - Streaming</title>
+    <link rel="icon" href="img/icons/logo-flixada.svg" />
+    <title>Suscribete - Flixada Streaming</title>
+    
   </head>
   <body>
     <header>
@@ -110,7 +111,7 @@
         <article
           class="row justify-content-evenly flex-column flex-md-row container align-items-center"
         >
-          <h1 class="display-5 text-center colorDeFlow mb-5">Elegí tu plan:</h1>
+          <h1 class="display-4 text-center text-white mb-5">Elegí tu plan:</h1>
 
           <aside
             class="card cardPrecioSuscripcion text-white bg-dark mb-3 col col-lg-4 sombraRedondeada"
@@ -122,7 +123,7 @@
                 <p class="fs-5 fw-lighter">x mes</p>
               </h2>
               <hr class="colorDeFlow" />
-              <ul class="mt-md-5">
+              <ul >
                 <li>2 Pantallas</li>
                 <li>Calidad HD</li>
               </ul>
@@ -146,7 +147,7 @@
                 <p class="fs-5 fw-lighter">x mes</p>
               </h2>
               <hr class="colorDeFlow" />
-              <ul class="mt-md-5">
+              <ul >
                 <li>4 Pantallas</li>
                 <li>HD, Full HD y 4K</li>
                 <li>HBO, KIDS, Star+</li>
@@ -171,7 +172,7 @@
                 <p class="fs-5 fw-lighter">x mes</p>
               </h2>
               <hr class="colorDeFlow" />
-              <ul class="mt-md-5">
+              <ul>
                 <li>8 Pantallas</li>
                 <li>HD, Full HD, 4K y 8K + HDR</li>
                 <li>HBO, KIDS, Star+, Disney+</li>
@@ -246,7 +247,7 @@
 
       <section class="text-center text-white container my-3">
         <div
-          class="container text-white bgHeaderFormLogin rounded-4 sombraRedondeada"
+          class="container text-white bgHeaderFormLogin formLogin rounded-4 sombraRedondeada"
         >
           <h1 class="pt-3 h4 letraLogoPrincipal textoFlow">Registrate acá</h1>
           <form class="d-flex align-items-end align-items-center flex-column">
@@ -297,10 +298,17 @@
               </div>
             </div>
 
+            <select class="form-select form-select-sm bg-dark rounded-3 text-white p-1 m-2" aria-label="form-select-sm example">
+              <option selected>Elegí tu plan</option>
+              <option value="1">Básico ($399)</option>
+              <option value="2">Familiar ($699)</option>
+              <option value="3">Premium ($899)</option>
+            </select>
+
             <div class="form-check my-auto me-4">
-              <label class="form-check-label">
+              <label>
                 <input
-                  class="form-check-input"
+                  class="form-check-input ms-3"
                   type="checkbox"
                   name="remember"
                 />
@@ -314,9 +322,9 @@
               class="pb-3 text-decoration-none letraLogoPrincipal colorDeFlow"
               href="/pages/error404.html"
             >
-              <button class="btn btn-dark rounded-4 btn p-2 m-2">
+              <span class="btn btn-dark rounded-4 btn p-2 m-2">
                 Suscribirse
-              </button>
+              </span>
             </a>
           </form>
         </div>

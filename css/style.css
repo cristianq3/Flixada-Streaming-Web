@@ -12,6 +12,7 @@ main {
   margin-top: 58px;
 }
 
+
 /* Sugerencia para incluir en estilos generales: textos del color del logo*/
 .textoFlow{
   color:#00bc7dfc
@@ -107,29 +108,39 @@ textarea:focus {
 
 /* Para DETALLE pelicula y serie */
 
+.botonCentrado {
+ 
+top: 50%;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+
+}
+
 .listaDetalle{
   list-style: none;
 }
 
 .botonReproducir{
-  font-size: large;
+  font-size: small;
   color: #00ffd5;
 }
 .efectoReproducir:hover{
   color: #00ffd5;
 }
 .imgFleabag{
-  width: 2000x;
+  width: 2000px;
 }
 .imgTheThing{
   width: 2000px;
 }
 .tituloEpisodios{
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 400;
 }
 .tituloEpisodio{
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 600;
 }
 .textoEpisodio{
@@ -172,8 +183,8 @@ footer a {
 /* Estilos propios de la PAGINA DE LOGIN login.html */
 .formLogin {
   align-self: center;
-  width: 90%;
-  padding-top: 10%;
+  width: 400px;
+  
   margin-bottom: 10%;
 }
 
@@ -186,11 +197,24 @@ textarea:focus {
   color: #ffffff;
 }
 
+textarea[type="text"]:focus,
+textarea:focus {
+  color: #ffffff;
+}
+
 .bgHeaderFormLogin {
   border: #00ffff29 solid 1px;
 }
 
 /* ESTILOS DE LA PAGINA SUSCRIPCION.html*/
+
+.form-select-sm {
+  width:min-content
+}
+
+
+
+
 
 .cardPrecioSuscripcion {
   max-width: 18rem;
@@ -249,7 +273,7 @@ textarea:focus {
   /*Cards Responsivas */
   /* letras card*/
   .colorTextoCard {
-    font-size: x-small;
+    font-size: medium;
       }
 }
 
@@ -273,33 +297,10 @@ textarea:focus {
     margin-top: auto;
     align-self: center;
     width: 50%;
-
-    padding-top: 12vh;
-    margin-bottom: 10%px;
+        margin-bottom: 10%;
   }
 
-  #form-contacto{
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  #form-contacto label{
-    width: 100px;
-  }
-
-  #form-contacto input{
-    width: 230px;
-  }
-
-  #form-contacto textarea{
-    width: 230px;
-    height: 130px;
-  }
-
-  #form-contacto input[type="submit"]{
-    width: 20%;
-    margin: 0 auto;
-  }
+  
 
 
   /* Letra de las cards de peliculas */ 

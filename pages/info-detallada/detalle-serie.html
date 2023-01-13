@@ -17,8 +17,8 @@
     />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-
-    <title>Fleabag - Streaming</title>
+    <link rel="icon" href="img/icons/logo-flixada.svg" />
+    <title>Fleabag - Flixada Streaming</title>
   </head>
   <body>
     <header>
@@ -104,26 +104,34 @@
         </div>
       </nav>
     </header>
-    
+
     <main class="bg-dark">
-      <div class="container text-center ">
-        <img
-          src="/img/detalle-serie/fleabag.jpg"
-          class="img-fluid imgFleabag rounded-5 sombraRedondeada mt-4"
-          alt="Fleabag"
-        />
-      </div>
-      <div class="text-center colorDeFlow mt-1">
-        <a href="/pages/error404.html"
-          ><button
-            type="button"
-            class="btn btn-lg btn-outline-secondary fs-4 efectoReproducir"
-          >
-            <i class="bi bi-play-fill botonReproducir"></i>Reproducir temporada
-            1
-          </button></a
+      <!--IMAGEN PRINCIPAL CON BOTON PLAY-->
+
+      <section class="container position-relative">
+        <div class="text-center">
+          <img
+            src="/img/detalle-serie/fleabag.jpg"
+            class="img-fluid imgFleabag rounded-5 sombraRedondeada mt-4"
+            alt="Fleabag"
+          />
+        </div>
+
+        <div
+          class="text-center colorDeFlow mt-1 p position-absolute botonCentrado"
         >
-      </div>
+          <a href="/pages/error404.html"
+            ><button
+              type="button"
+              class="btn btn-lg btn-outline-secondary fs-4"
+            >
+              <i class="bi bi-play-fill fs-1"></i></button
+          ></a>
+        </div>
+      </section>
+
+      <!--SECCION DE Desarrollo de la serie-->
+
       <section class="container mb-2 mt-4 bg-dark">
         <div class="d-flex flex-column">
           <article class="mb-1">
@@ -135,7 +143,7 @@
             >
               <li class="pt-2">2016</li>
               <li class="mx-2">
-                <button type="button" class="btn btn-outline-light">18+</button>
+                <span type="button" class="btn btn-outline-light">18+</span>
               </li>
               <li class="pt-2">27 min</li>
               <li class="pt-2 ms-2">HD</li>
@@ -155,8 +163,86 @@
           </article>
         </div>
       </section>
+
+      <!--SECCION DE Episodios-->
       <section class="container">
         <h4 class="tituloEpisodios textoBlanco pt-3 mb-4">Episodios</h4>
+       
+
+
+
+
+        <!--Acordion-->
+        <div class="accordion accordion-flush" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header " id="headingOne">
+              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               Episodio 1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show bg-dark" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body ">
+                <article class="row mb-3">
+                  <img
+                    src="/img/detalle-serie/1.jpg"
+                    class="col-md-6 col-lg-4 img-fluid"
+                    alt="Fleabag primer plano"
+                  />
+                  <div class="col-md-6 col-lg-8">
+                    <h6 class="textoFlow mb-2 pt-sm-3 pt-lg-5 tituloEpisodio">
+                      Episodio 1
+                    </h6>
+                    <p class="textoBlanco textoEpisodio mt-lg-2">
+                      Fleabag la enojada, perversa, ultrajante e hilarante, llega con
+                      una explosión, mientras rueda por la ciudad agarrando a todos y
+                      todo lo que la pueda salvar de hundirse.
+                    </p>
+                    <a href="/pages/error404.html">
+                      <button
+                        class="btn btn-md btn-outline-secondary fs-6 efectoReproducir mt-lg-2"
+                      >
+                        <i class="botonVerEpisodio bi bi-play-circle"></i> Ver ahora
+                      </button>
+                    </a>
+                  </div>
+                </article>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+       
         <article class="row mb-3">
           <img
             src="/img/detalle-serie/1.jpg"
@@ -241,9 +327,7 @@
             alt="Fleabag primer plano"
           />
           <div class="col-md-6 col-lg-8">
-            <h6 class=" mb-2 pt-sm-3 pt-lg-5 tituloEpisodio">
-              Episodio 4
-            </h6>
+            <h6 class="mb-2 pt-sm-3 pt-lg-5 tituloEpisodio">Episodio 4</h6>
             <p class="textoBlanco textoEpisodio mt-lg-2">
               Fleabag y su hermana Claire, visitan a regañadientes a un retiro
               silencioso exclusivo para mujeres, cortesía de su padre. Su
@@ -294,7 +378,7 @@
             class="col-md-6 col-lg-4 img-fluid"
             alt="Fleabag primer plano"
           />
-          <div class="col-md-6 col-lg-8 ">
+          <div class="col-md-6 col-lg-8">
             <h6 class="textoFlow mb-2 pt-sm-3 pt-lg-5 tituloEpisodio">
               Episodio 6
             </h6>
