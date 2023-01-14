@@ -9,19 +9,22 @@ body {
 }
 main {
   flex-grow: 1;
-  margin-top: 58px;
+  padding-top: 58px;
 }
-
 
 /* Sugerencia para incluir en estilos generales: textos del color del logo*/
-.textoFlow{
-  color:#00bc7dfc
+.textoFlow {
+  color: #00bc7dfc;
 }
-.textoBlanco{
-  color: #f6f8f7b6
+.textoBlanco {
+  color: #f6f8f7b6;
 }
 
 /* CARDS contenedores de Peliculas */
+
+.asideCardHover:hover {
+  filter: brightness(130%);
+}
 
 .fondoTransparenteCard img {
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.503);
@@ -29,7 +32,7 @@ main {
 }
 
 .fondoTransparenteCard :hover {
-  filter: brightness(140%);
+  filter: brightness(105%);
 }
 
 .colorTextoCard:hover {
@@ -47,7 +50,6 @@ main {
 .sombraRedondeada {
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.503);
   padding: 0;
- 
 }
 
 /* BARRA DE NAVEGACION  (NAVBAR) */
@@ -105,15 +107,14 @@ textarea:focus {
   background-color: #74ebd5;
 }
 
-
 /* Para DETALLE pelicula y serie */
 
 #accordionEpisodios {
-  display:none;
+  display: none;
 }
 
 .EpisodiosLG {
-  display:block;
+  display: block;
 }
 
 .EpisodiosLG article img {
@@ -123,50 +124,56 @@ textarea:focus {
 }
 
 .botonCentrado {
- 
-top: 50%;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
-
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-.listaDetalle{
+.textoCategoria {
+  font-size: 39px;
+  font-family: Righteous, cursive;
+
+  top: 44%;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+.listaDetalle {
   list-style: none;
 }
 
-.botonReproducir{
+.botonReproducir {
   font-size: small;
   color: #00ffd5;
 }
-.efectoReproducir:hover{
+.efectoReproducir:hover {
   color: #00ffd5;
 }
-.imgFleabag{
+.imgFleabag {
   width: 2000px;
 }
-.imgTheThing{
+.imgTheThing {
   width: 2000px;
 }
-.tituloEpisodios{
+.tituloEpisodios {
   font-size: 15px;
   font-weight: 400;
 }
-.tituloEpisodio{
+.tituloEpisodio {
   font-size: 15px;
   font-weight: 600;
 }
-.textoEpisodio{
+.textoEpisodio {
   font-size: 18px;
 }
-.botonVerEpisodio{
+.botonVerEpisodio {
   font-size: large;
   color: #00ffd5;
 }
-
-
-
 
 /* FOOTER */
 
@@ -200,16 +207,14 @@ footer a {
 /* PAGINA ACERCA DE NOSOTROS*/
 
 .imgProfile {
-  width:200px;
+  width: 200px;
 }
-
-
 
 /* Estilos propios de la PAGINA DE LOGIN login.html */
 .formLogin {
   align-self: center;
   width: 400px;
-  
+
   margin-bottom: 10%;
 }
 
@@ -234,33 +239,32 @@ textarea:focus {
 /* ESTILOS DE LA PAGINA SUSCRIPCION.html*/
 
 .form-select-sm {
-  width:min-content
+  width: min-content;
 }
 
+.sombraTexto {
+  text-shadow: -2px 0px 8px #000000;
+}
 
 .cardPrecioSuscripcion {
   max-width: 18rem;
+  width: 300px;
+  border-radius: 8%;
+  height: 25rem;
+  border: #00ffff29 solid 1px;
+  margin-right: 5px;
+  margin-left: 5px;
 
-  border-radius: 2%;
-  height: 26rem;
-  border: #00ffff29 solid  1px;
- margin-right: 5px;
- margin-left: 5px;
-
- background-color: #74ebd5;
+  background-color: #74ebd5;
   background: -webkit-linear-gradient(#10df9acd, #02a8aacf, #3b9fb5e5);
 
-/*
+  /*
  background-image: url(/img/fondo-card-pricing.jpg) ; */
- 
 }
 
 .cardPrecioSuscripcion:hover {
-
   filter: brightness(1.1);
-  
 }
-
 
 /* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
 
@@ -270,7 +274,7 @@ textarea:focus {
   /* Estilos generales*/
 
   main {
-    margin-top: 45px;
+    padding-top: 40px;
   }
 
   /* Navbar */
@@ -296,23 +300,20 @@ textarea:focus {
   /* letras card*/
   .colorTextoCard {
     font-size: medium;
-      }
+  }
 
-      /*Acordion detalle de SERIE*/
+  /*Acordion detalle de SERIE*/
 
-      #accordionEpisodios {
-        display:block;
-              }
-      .EpisodiosLG {
-        display:none;
-      }
+  #accordionEpisodios {
+    display: block;
+  }
+  .EpisodiosLG {
+    display: none;
+  }
 
-      .textoEpisodio {
-
-        font-size: x-small;
-
-      }
-      
+  .textoEpisodio {
+    font-size: x-small;
+  }
 }
 
 /* Dispositivos MEDIUM (TABLETS) */
@@ -335,31 +336,25 @@ textarea:focus {
     margin-top: auto;
     align-self: center;
     width: 50%;
-        margin-bottom: 10%;
+    margin-bottom: 10%;
   }
 
   /* Accordion pagina Detalle Serie (FLEABAG)*/
 
   #accordionEpisodios {
-    display:block;
-    
+    display: block;
   }
   .EpisodiosLG {
-    display:none;
+    display: none;
   }
-  
-  
-  /* Letra de las cards de peliculas */ 
+
+  /* Letra de las cards de peliculas */
   .colorTextoCard {
-    
-  
     font-size: large;
-    
   }
 }
 
 /* Dispositivos Large en adelante PC, TV, etc */
 
 @media all and (min-width: 992x) {
- 
 }
