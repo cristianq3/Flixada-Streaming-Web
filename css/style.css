@@ -55,7 +55,7 @@ main {
 /* Logo FLIXADA Con gradientes*/
 .logoFlixada {
   font-family: "Righteous", cursive;
-  font-size: 72px;
+  font-size: 55px;
   background: -webkit-linear-gradient(#00ffd5, #1e9672, #04ffd5);
   -webkit-background-clip: text;
   background-clip: text;
@@ -108,6 +108,20 @@ textarea:focus {
 
 /* Para DETALLE pelicula y serie */
 
+#accordionEpisodios {
+  display:none;
+}
+
+.EpisodiosLG {
+  display:block;
+}
+
+.EpisodiosLG article img {
+  width: 300px;
+  height: 180px;
+  border-radius: 15%;
+}
+
 .botonCentrado {
  
 top: 50%;
@@ -151,6 +165,9 @@ margin: auto;
   color: #00ffd5;
 }
 
+
+
+
 /* FOOTER */
 
 .bg-footer {
@@ -179,6 +196,14 @@ footer a {
 .text-dark {
   font-weight: bolder;
 }
+
+/* PAGINA ACERCA DE NOSOTROS*/
+
+.imgProfile {
+  width:200px;
+}
+
+
 
 /* Estilos propios de la PAGINA DE LOGIN login.html */
 .formLogin {
@@ -213,20 +238,17 @@ textarea:focus {
 }
 
 
-
-
-
 .cardPrecioSuscripcion {
   max-width: 18rem;
 
-  border-radius: 10%;
-  height: 25rem;
+  border-radius: 2%;
+  height: 26rem;
   border: #00ffff29 solid  1px;
  margin-right: 5px;
  margin-left: 5px;
 
  background-color: #74ebd5;
-  background: -webkit-linear-gradient(#10df9acd, #028041cf, #3b9fb5e5);
+  background: -webkit-linear-gradient(#10df9acd, #02a8aacf, #3b9fb5e5);
 
 /*
  background-image: url(/img/fondo-card-pricing.jpg) ; */
@@ -275,6 +297,22 @@ textarea:focus {
   .colorTextoCard {
     font-size: medium;
       }
+
+      /*Acordion detalle de SERIE*/
+
+      #accordionEpisodios {
+        display:block;
+              }
+      .EpisodiosLG {
+        display:none;
+      }
+
+      .textoEpisodio {
+
+        font-size: x-small;
+
+      }
+      
 }
 
 /* Dispositivos MEDIUM (TABLETS) */
@@ -300,9 +338,17 @@ textarea:focus {
         margin-bottom: 10%;
   }
 
+  /* Accordion pagina Detalle Serie (FLEABAG)*/
+
+  #accordionEpisodios {
+    display:block;
+    
+  }
+  .EpisodiosLG {
+    display:none;
+  }
   
-
-
+  
   /* Letra de las cards de peliculas */ 
   .colorTextoCard {
     
