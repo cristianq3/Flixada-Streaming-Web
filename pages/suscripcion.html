@@ -21,7 +21,7 @@
     <title>Suscribete - Flixada Streaming</title>
     
   </head>
-  <body>
+  <body class="bg-dark">
     <header>
       <!-- Barra de Navegacion No Modificar nada -->
       <nav
@@ -130,11 +130,15 @@
               </ul>
             </div>
             <div class="mb-3 text-center ">
-              <a href="#formSuscripcion"
-                ><button type="button" class="btn btn-outline-dark shadow">
-                  Suscribete
-                </button></a
-              >
+              
+                <span>
+                  <a
+                    href="#formSuscripcion"
+                    class="botonSuscribirse  "
+                  >
+                    Suscríbete</a
+                  >
+                </span>
             </div>
           </aside>
 
@@ -155,11 +159,14 @@
               </ul>
             </div>
             <div class="mb-3 text-center">
-              <a href="#formSuscripcion"
-                ><button type="button" class="btn btn-outline-dark shadow">
-                  Suscribete
-                </button></a
-              >
+              <span>
+                <a
+                  href="#formSuscripcion"
+                  class="botonSuscribirse  "
+                >
+                  Suscríbete</a
+                >
+              </span>
             </div>
           </aside>
 
@@ -181,27 +188,59 @@
               </ul>
             </div>
             <div class="mb-3 text-center">
-              <a href="#formSuscripcion"
-                ><button type="button" class="btn btn-outline-dark shadow">
-                  Suscribete
-                </button></a
-              >
+              <span>
+                <a
+                  href="#formSuscripcion"
+                  class="botonSuscribirse  "
+                >
+                  Suscríbete</a
+                >
+              </span>
             </div>
           </aside>
         </article>
       </section>
 
+<!--SECCION MIRALA EN TODOSTUS DISPOSITIVOS-->
+<section class="pt-5 text-center container">
+  <article class="container display-5 d-flex align-items-center row">
+    <p class="text-white textBanner col-12 col-md-6">
+      Podés ver
+      <strong class="letraLogoPrincipal colorDeFlow">flixada</strong> en
+      todos tus dispositivos <br />
+
+      <span>
+        <a
+          href="/pages/suscripcion.html"
+          class="botonSuscribirse  "
+        >
+          Suscríbete</a
+        >
+      </span>
+    </p>
+
+    <div class="col-12 col-md-6">
+      <img
+        src="/img/dispositivos.png"
+        class="img-fluid"
+        alt="dispositivos para ver streaming"
+      />
+    </div>
+  </article>
+</section>
+
+
       <!-- SECCION DESCARGA LA APP-->
       <section
-        class="pt-5 pb-5 text-center text-info sombraRedondeada rounded-5 container mb-2"
+        class="pt-5 pb-5 text-center text-info  rounded-5 container mb-2"
       >
-        <article class="container display-4 text-info-light">
+        <article class="container display-4 ">
           <p class="text-white">
-            <strong class="logoFlixada">flixada</strong> con vos en todos lados
+            Con vos en todos lados
           </p>
 
-          <p class="lead colorDeFlow">
-            Mira tus series y peliculas favoritas desde<br />
+          <p class="lead colorDeFlow container">
+            Mira tus series y peliculas favoritas desde 
             cualquier dispositivo descargando nuestra
             <b class="text-white">app</b>
           </p>
@@ -211,7 +250,7 @@
               <a href="http://www.applestore.com" target="blank">
                 <img
                   src="/img/badge-apple-store.svg"
-                  class="img-fluid pb-3 m-2"
+                  class="img-fluid pb-3 m-2 brilloAumentado "
                   alt="logo apple store"
                 />
               </a>
@@ -220,8 +259,9 @@
               <a href="http://www.googleplay.com" target="blank">
                 <img
                   src="/img/google-play-badge-bb.svg"
-                  class="img-fluid pb-3 m-2"
+                  class="img-fluid pb-3 m-2 brilloAumentado"
                   alt="logo google play"
+                  id="formSuscripcion"
                 />
               </a>
             </div>
@@ -229,28 +269,20 @@
         </article>
       </section>
 
-      <!-- SECCION MIRA EN TODOS LOS DISPOSITIVOS-->
+  
 
-      <section class="pt-5 pb-5 text-center text-info container mb-2">
-        <article class="container display-4 text-info-light">
-          <p class="text-white">Podes disfrutar en todos tus dispositivos</p>
+      
 
-          <div class="colorDeFlow fs-1">
-            <i class="bi bi-tv mx-3"></i>
-            <i class="bi bi-phone mx-3"></i>
-            <i class="bi bi-laptop mx-3"></i>
-            <i class="bi bi-tablet mx-3" id="formSuscripcion"></i>
-          </div>
-        </article>
-      </section>
+
+
 
       <!--Formulario de SUSCRIPCION -->
 
       <section class="text-center text-white container my-3">
         <div
-          class="container text-white bgHeaderFormLogin formLogin rounded-4 sombraRedondeada"
+          class="container text-white bgHeaderFormLogin formLogin rounded-4 sombraRedondeada" 
         >
-          <h1 class="pt-3 h4 letraLogoPrincipal textoFlow">Registrate acá</h1>
+          <h1 class="pt-3 h4  textoFlow">Registrate acá</h1>
           <form class="d-flex align-items-end align-items-center flex-column">
             <div class="mb-3 mt-3 d-flex flex-column align-items-start">
               <input
@@ -293,7 +325,7 @@
                   id="pwd"
                   maxlength="50"
                   minlength="2"
-                  placeholder="contraseña"
+                  placeholder="Contraseña"
                   name="pswd"
                 />
               </div>
@@ -323,9 +355,14 @@
               class="pb-3 text-decoration-none letraLogoPrincipal colorDeFlow"
               href="/pages/error404.html"
             >
-              <span class="btn btn-dark rounded-4 btn p-2 m-2">
-                Suscribirse
-              </span>
+            <span class="btn">
+              <a
+                href="/pages/error404.html"
+                class="botonSuscribirse mb-5 "
+              >
+                Suscribirme</a
+              >
+            </span>
             </a>
           </form>
         </div>

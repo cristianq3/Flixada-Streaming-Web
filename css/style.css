@@ -16,6 +16,10 @@ main {
 .textoFlow {
   color: #00bc7dfc;
 }
+.textoFlow:hover {
+  color: #ffffff;
+}
+
 .textoBlanco {
   color: #f6f8f7b6;
 }
@@ -27,7 +31,7 @@ main {
 }
 
 .fondoTransparenteCard img {
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.503);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.953);
   padding: 0;
 }
 
@@ -36,7 +40,7 @@ main {
 }
 
 .colorTextoCard:hover {
-  color: #129797b6;
+  color: #edefefb6;
 }
 
 .colorTextoCard {
@@ -54,6 +58,10 @@ main {
 
 /* BARRA DE NAVEGACION  (NAVBAR) */
 
+.btn-dark:hover {
+  background-color: #3c4a46db;
+}
+
 /* Logo FLIXADA Con gradientes*/
 .logoFlixada {
   font-family: "Righteous", cursive;
@@ -64,8 +72,18 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
+.logoFlixadaChico {
+  font-family: "Righteous", cursive;
+  
+  background: -webkit-linear-gradient(#00ffd5, #1e9672, #04ffd5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .colorDeFlow {
   color: #57dfb7;
+  
 }
 
 .letraLogoPrincipal {
@@ -103,8 +121,65 @@ textarea:focus {
   display: none;
 }
 
+/* Para CONTROL DE PAGINACION ESTILOS DE LOS BOTONES*/
 .page-link {
-  background-color: #74ebd5;
+  background-color: rgb(31 199 144);
+  background: -webkit-linear-gradient(#00ffd5, #1e9672, #04ffd5);
+  border: 1px solid rgba(3, 74, 70, 0.607);
+  color: #000000;
+  border-radius: 6px;
+  text-shadow: #000000;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.page-link:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/*** ESTILOS BOTÓN SUSCRIBIRSE que esta en INDEX.html ***/
+
+.botonSuscribirse {
+  background: #2125297d; /* color de fondo */
+    color: #fffffffc; /* color de fuente */
+  text-decoration: none;
+  border: 1px solid #00bc7dfc; /* tamaño y color de borde */
+  padding: 3% 25%;
+  border-radius: 1px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+.botonSuscribirse:hover {
+  color: rgb(255, 255, 255); /* color de fuente hover */
+}
+.botonSuscribirse::after {
+  content: "";
+  background: #00bc7dfc; /* color de fondo hover */
+  background: -webkit-linear-gradient(#10df9acd, #089380cf, #3b9fb5e5);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: -100%;
+  bottom: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 20px;
+}
+.botonSuscribirse:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 /* Para DETALLE pelicula y serie */
@@ -131,15 +206,23 @@ textarea:focus {
   margin: auto;
 }
 
-.textoCategoria {
-  font-size: 39px;
-  font-family: Righteous, cursive;
 
-  top: 44%;
+
+
+
+.textoCategoria {
+  font-size: 29px;
+  font-family: righteous, cursive;
+  top:44%;
   left: 0;
   right: 0;
+  color: #ffffff3e;
 
   margin: auto;
+}
+
+.textoCategoria:hover {
+  color: white;
 }
 
 .listaDetalle {
@@ -236,7 +319,7 @@ textarea:focus {
   border: #00ffff29 solid 1px;
 }
 
-/* ESTILOS DE LA PAGINA SUSCRIPCION.html*/
+/* ESTILOS DE LA PAGINA SUSCRIPCION.html */
 
 .form-select-sm {
   width: min-content;
@@ -266,6 +349,11 @@ textarea:focus {
   filter: brightness(1.1);
 }
 
+.brilloAumentado:hover {
+  filter: brightness(1.5);
+
+}
+
 /* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
 
 /* Dispositivos SMALL */
@@ -276,6 +364,9 @@ textarea:focus {
   main {
     padding-top: 40px;
   }
+
+  
+
 
   /* Navbar */
   nav .navFija {
