@@ -114,6 +114,14 @@ textarea:focus {
 
 /* Display de Formularios del NAVBAR para que se vea bien en SMALL*/
 
+
+input[placeholder=Buscar]:focus {
+  width: 300px;
+
+
+}
+
+
 .formBuscar {
   align-self: center;
 }
