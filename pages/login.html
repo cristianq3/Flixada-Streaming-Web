@@ -111,17 +111,17 @@
 
     <main class="bg-dark">
 
-      <!-- Formulario de ingreso a la pagina o-->
+      <!-- Formulario de ingreso a la pagina login-->
       <section class="text-center text-white container formLogin">
         <div
           class="container text-white bgHeaderFormLogin rounded-4 mt-5 sombraRedondeada"
         >
           <h1 class="pt-3 h4 letraLogoPrincipal">Ingreso</h1>
-          <form class="d-flex align-items-end align-items-center flex-column">
-            <div class="mb-3 mt-3 d-flex flex-column align-items-start">
+          <form class="d-flex align-items-end align-items-center flex-column ">
+            <div class="mb-3 mt-3 d-flex flex-column align-items-start loginLG">
               <input
                 type="email"
-                class="form-control form-control bg-dark rounded-5"
+                class="form-control form-control bg-dark rounded-5 "
                 id="email"
                 placeholder="e-mail"
                 name="email"
@@ -130,10 +130,10 @@
               />
             </div>
             <div>
-              <div class="mb-3 d-flex flex-column align-items-start">
+              <div class="mb-3 d-flex flex-column align-items-start loginLG">
                 <input
                   type="password"
-                  class="form-control form-control bg-dark rounded-5"
+                  class="form-control form-control bg-dark rounded-5 "
                   id="pwd"
                   maxlength="50"
                   minlength="2"
@@ -154,20 +154,25 @@
                   Recuérdame
                 </label>
               </div>
+                
               <button
                 type="submit"
-                class="btn btn-outline-secondary rounded-4 btn-sm"
+                class=" form-control form-control bg-dark rounded-5 
+                 "
+                 id="loginButton"
               >
-                Ingresar
+              Ingresar
+                
               </button>
+          
             </div>
 
             <p class="text-secondary">
               No eres usuario?
               <a
-                class="fs-5 text-decoration-none letraLogoPrincipal colorDeFlow"
+                class="botonSuscribirse"
                 href="/pages/suscripcion.html"
-                >Suscríbete Acá!
+                >Suscríbete!
               </a>
             </p>
           </form>

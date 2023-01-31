@@ -24,7 +24,10 @@ main {
   color: #f6f8f7b6;
 }
 
+
 /* CARDS contenedores de Peliculas */
+
+
 
 .asideCardHover:hover {
   filter: brightness(130%);
@@ -102,6 +105,8 @@ main {
   color: #57dfb7;
 }
 
+ 
+
 input[type="text"]:focus,
 textarea:focus {
   color: #ffffff;
@@ -116,6 +121,7 @@ textarea:focus {
 .form-control {
   color: #ffffff;
 }
+
 
 .formBuscar1 {
   display: none;
@@ -206,10 +212,6 @@ textarea:focus {
   margin: auto;
 }
 
-
-
-
-
 .textoCategoria {
   font-size: 29px;
   font-family: righteous, cursive;
@@ -237,10 +239,10 @@ textarea:focus {
   color: #00ffd5;
 }
 .imgFleabag {
-  width: 2000px;
+  width: 100%;
 }
 .imgTheThing {
-  width: 2000px;
+  width: 100%;
 }
 .tituloEpisodios {
   font-size: 15px;
@@ -264,27 +266,33 @@ textarea:focus {
   background-color: #74ebd5;
   background: -webkit-linear-gradient(#00bc7dfc, #57dfb7, #3b9fb5e5);
 }
-
 .textoFooter {
   font-size: medium;
   padding: 10px;
 }
-
 footer a {
   text-decoration: none;
   color: rgb(3, 3, 3);
 }
-
 .inconosRedesSociales a {
   color: #243532;
 }
-
 .inconosRedesSociales a:hover {
   color: #009499;
 }
-
 .text-dark {
   font-weight: bolder;
+}
+
+
+footer a[href="pages/peliculas.html"] {
+  display: none;
+
+}
+
+footer a[href="/pages/peliculas.html"] {
+  display: none;
+
 }
 
 /* PAGINA ACERCA DE NOSOTROS*/
@@ -296,9 +304,9 @@ footer a {
 /* Estilos propios de la PAGINA DE LOGIN login.html */
 .formLogin {
   align-self: center;
-  width: 400px;
-
-  margin-bottom: 10%;
+  width: 500px;
+margin-top: 10%;
+  margin-bottom:10%  ;
 }
 
 input[type="email"]:focus,
@@ -321,11 +329,13 @@ textarea:focus {
 
 /* ESTILOS DE LA PAGINA SUSCRIPCION.html */
 
+
+
 .form-select-sm {
   width: min-content;
 }
 
-.sombraTexto {
+.sombraTextoSuscripcion {
   text-shadow: -2px 0px 8px #000000;
 }
 
@@ -337,12 +347,8 @@ textarea:focus {
   border: #00ffff29 solid 1px;
   margin-right: 5px;
   margin-left: 5px;
-
   background-color: #74ebd5;
-  background: -webkit-linear-gradient(#10df9acd, #02a8aacf, #3b9fb5e5);
-
-  /*
- background-image: url(/img/fondo-card-pricing.jpg) ; */
+  background: -webkit-linear-gradient(#10df9acd, #02a8aacf, #3b9fb5e5); 
 }
 
 .cardPrecioSuscripcion:hover {
@@ -354,6 +360,12 @@ textarea:focus {
 
 }
 
+.card-body {
+  flex: 1 1 auto;
+  /* padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x); */
+  color: var(--bs-card-color);
+}
+
 /* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
 
 /* Dispositivos SMALL */
@@ -363,11 +375,7 @@ textarea:focus {
 
   main {
     padding-top: 40px;
-  }
-
-  
-
-
+  } 
   /* Navbar */
   nav .navFija {
     position: relative;
@@ -379,7 +387,6 @@ textarea:focus {
   .formBuscar2 {
     display: none;
   }
-
   .formLogin {
     align-self: center;
     width: 100%;
@@ -392,7 +399,15 @@ textarea:focus {
   .colorTextoCard {
     font-size: medium;
   }
+  /*Pagina Suscripciones*/
 
+  .sombraTextoSuscripcion {
+    font-size:small;
+   }
+  .cardPrecioSuscripcion {
+    width: 90%;
+
+  }
   /*Acordion detalle de SERIE*/
 
   #accordionEpisodios {
@@ -403,7 +418,7 @@ textarea:focus {
   }
 
   .textoEpisodio {
-    font-size: x-small;
+    font-size: small;
   }
 }
 
@@ -414,13 +429,30 @@ textarea:focus {
   main {
     padding-top: 55px;
   }
-
+ 
   /* Formularios Responsivos TABLETS */
   .formBuscar1 {
     display: block;
   }
   .formBuscar2 {
     display: none;
+  }
+
+  #Plan899 {
+    padding-bottom: 0px;
+    margin-bottom: -18px;;
+  }
+
+  .cardPrecioSuscripcion {
+    max-width: 18rem;
+    
+    border-radius: 5%;
+    height: 25rem;
+    border: #00ffff29 solid 1px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #74ebd5;
+    background: -webkit-linear-gradient(#10df9acd, #02a8aacf, #3b9fb5e5); 
   }
 
   .formLogin {
