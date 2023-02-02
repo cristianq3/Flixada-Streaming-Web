@@ -22,7 +22,7 @@
   </head>
   <body>
     <header>
-      <!-- Barra de Navegacion No Modificar nada -->
+      <!-- Barra de Navegacion   -->
       <nav
         class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top p-0 m-0"
       >
@@ -93,11 +93,24 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link p-1 ps-" href="/pages/login.html"
-                  ><button type="button" class="btn btn-dark p-1 m-0">
-                    Ingresar
-                  </button></a
-                >
+                <a class="nav-link p-1 ps-" href="/pages/login.html">
+                  <button
+                  type="button"
+                  class="btn btn-outline-info ">
+                
+              Ingresar
+                </button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-1 ps-" href="/pages/suscripcion.html">
+                  <button
+                  type="button"
+                  class="btn btn-outline-info">
+                
+              Suscríbete
+                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -105,10 +118,8 @@
       </nav>
     </header>
 
-    <main class="bg-dark ">
+    <main class="bg-dark">
       <!--Banner  pagina contacto-->
-
-      
 
       <section class="container text-white text-center my-2 p-2 rounded-5">
         <h1 class="display-3">Comunicate con nosotros</h1>
@@ -119,124 +130,125 @@
 
       <!--Formulario de contacto new-->
 
-      <section class="container sombraRedondeada  d-flex justify-content-around flex-wrap flex-md-nowrap  ">
-
-      <section class="text-center text-white container mt-5">
-        <div
-          class="container text-white bgHeaderFormLogin formLogin rounded-4 sombraRedondeada"
+      <section
+        class="contacto position-relative
+         container d-flex justify-content-around flex-wrap flex-md-nowrap"
+      >
+      <!--BOTON DE WATHTSAPP
+      -->
+      <span
         >
-          <h1 class="pt-3 lead textoFlow">Llena el formulario de contacto</h1>
-          <form class="d-flex align-items-end align-items-center flex-column">
-            <div class="mb-3 mt-3 d-flex flex-column align-items-start">
-              <input
-                type="text"
-                class="form-control form-control-lg bg-dark rounded-5"
-                id="nombre"
-                placeholder="Nombre"
-                name="nombre"
-                maxlength="80"
-                minlength="6"
-              />
-            </div>
-            <div>
-              <div class="mb-3 d-flex flex-column align-items-start">
+        
+        <a
+          href="https://api.whatsapp.com/send?phone=543815871884"
+          target="_blank"
+          class="bi bi-whatsapp btn-wtsp"
+        > <p class="chat"> Whatsapp</p> </a>
+      </span>
+        <article class="text-center text-white container mt-">
+          <div
+            class="container text-white bgHeaderFormLogin formLogin rounded-4 sombraRedondeada"
+          >
+            <h1 class="pt-3 lead textoFlow">Llená el formulario de contacto</h1>
+            <form class="d-flex align-items-end align-items-center flex-column">
+              <div class="mb-3 mt-3 d-flex flex-column align-items-start">
                 <input
                   type="text"
                   class="form-control form-control-lg bg-dark rounded-5"
-                  id="apellido"
-                  maxlength="50"
-                  minlength="2"
-                  placeholder="Apellido"
-                  name="apellido"
+                  id="nombre"
+                  placeholder="Nombre"
+                  name="nombre"
+                  maxlength="80"
+                  minlength="6"
                 />
               </div>
-              <div class="mb-3 d-flex flex-column align-items-start">
-                <input
-                  type="email"
-                  class="form-control form-control-lg bg-dark rounded-5"
-                  id="mail"
-                  maxlength="50"
-                  minlength="2"
-                  placeholder="e-mail"
-                  name="mail"
-                />
+              <div>
+                <div class="mb-3 d-flex flex-column align-items-start">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg bg-dark rounded-5"
+                    id="apellido"
+                    maxlength="50"
+                    minlength="2"
+                    placeholder="Apellido"
+                    name="apellido"
+                  />
+                </div>
+                <div class="mb-3 d-flex flex-column align-items-start">
+                  <input
+                    type="email"
+                    class="form-control form-control-lg bg-dark rounded-5"
+                    id="mail"
+                    maxlength="50"
+                    minlength="2"
+                    placeholder="e-mail"
+                    name="mail"
+                  />
+                </div>
+                <div class="mb-3 d-flex flex-column align-items-start">
+                  <input
+                    type="number"
+                    class="form-control form-control-lg bg-dark rounded-5"
+                    id="pwd"
+                    maxlength="50"
+                    minlength="2"
+                    placeholder="Tel"
+                    name="pswd"
+                  />
+                </div>
               </div>
-              <div class="mb-3 d-flex flex-column align-items-start">
-                <input
-                  type="password"
-                  class="form-control form-control-lg bg-dark rounded-5"
-                  id="pwd"
-                  maxlength="50"
-                  minlength="2"
-                  placeholder="contraseña"
-                  name="pswd"
-                />
-              </div>
-            </div>
 
-            <div class="d-flex justify-content-center my-1">
-              <textarea
-                type="text"
-                class="form-control form-control-lg bg-dark rounded-2"
-                id="text"
-                maxlength="390"
-                minlength="10"
-                placeholder="Escribe tu mensaje aqui..."
-                name="text"
-              ></textarea>
-            </div>
+              <div class="d-flex justify-content-center my-1">
+                <textarea
+                  type="text"
+                  class="form-control form-control-lg bg-dark rounded-2"
+                  id="text"
+                  maxlength="450"
+                  minlength="10"
+                  placeholder="Escribe tu mensaje aqui..."
+                  name="text"
+                ></textarea>
+              </div>
 
-            <a
-              class="fs-5 mt-2 pb-3 text-decoration-none letraLogoPrincipal colorDeFlow"
-              href="/pages/error404.html"
+              <a
+                class="fs-5 mt-2 pb-3 text-decoration-none letraLogoPrincipal colorDeFlow"
+                href="/pages/error404.html"
+              >
+                <button class="btn btn-outline-secondary rounded-4 btn">
+                  Enviar
+                </button>
+              </a>
+            </form>
+          </div>
+        </article>
+
+        <!--Seccion Datos Extra de contacto-->
+
+        <article id="datosContacto"
+          class="container colorDeFlow text-center my-3 p-5 rounded-5 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="d-flex flex-column flex-md-row">
+            <i class="bi bi-envelope-at fs-2 "></i>
+            <a href="mailto:contacto@flixada.com.ar" class="textoFlow">
+              <p class="lead fs-2">contacto@flixada.com.ar</p></a
             >
-              <button class="btn btn-outline-secondary rounded-4 btn">
-                Enviar
-              </button>
-            </a>
-          </form>
-        </div>
+          </div>
+
+          <div class="d-sm-flex justify-content-start">
+            <i class="bi bi-telephone fs-2 "></i>
+
+            <p class="lead mx-3 fs-2">381 123 4567</p>
+          </div>
+
+          <div class="d-xl-flex">
+            <i class="bi bi-geo-alt fs-2 "></i>
+            <p class="lead fs-2">Avenida Siempre Viva 742 - S.M. de Tucumán</p>
+          </div>
+        </article>
       </section>
-
-
-
-      <!--Seccion Datos Extra de contacto-->
-
-      <section
-        class="container textoFlow text-center my-3 p-5 rounded-5 d-flex flex-column justify-content-center align-items-center"
-      >
-        <div class="d-flex">
-          <i class="bi bi-envelope-at fs-5 fw-bolder me-3"></i>
-          <a href="mailto:contacto@flixada.com.ar" class="textoFlow">
-            <p class="lead">contacto@flixada.com.ar</p></a
-          >
-        </div>
-
-        <div class="d-sm-flex justify-content-start">
-          <i class="bi bi-telephone fs-5 fw-bolder me-3"></i>
-
-          <p class="lead mx-3">381 123 4567</p>
-        </div>
-
-        <div class="d-xl-flex">
-          <i class="bi bi-geo-alt fs-5 fw-bolder me-3"></i>
-          <p class="lead">Avenida Siempre Viva 742 - S.M. de Tucumán</p>
-        </div>
-      </section>
-
-    </section>
-
-
-
-
-
-
-
-
-
     </main>
 
-    <!--Pie de Pagina NO MODIFICAR NADA!!-->
+    <!--Pie de Pagina  !!-->
     <footer class="bg-dark">
       <section class="container bg-footer rounded-4">
         <!--Seccion de Links y Redes Sociales-->
@@ -311,6 +323,7 @@
           </p>
         </div>
       </section>
+      
     </footer>
     <script src="/js/bootstrap.min.js"></script>
   </body>

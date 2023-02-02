@@ -23,7 +23,7 @@
   </head>
   <body class="bg-dark">
     <header>
-      <!-- Barra de Navegacion No Modificar nada -->
+      <!-- Barra de Navegacion   -->
       <nav
         class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top p-0 m-0"
       >
@@ -94,11 +94,24 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link p-1 ps-" href="/pages/login.html"
-                  ><button type="button" class="btn btn-dark p-1 m-0">
-                    Ingresar
-                  </button></a
-                >
+                <a class="nav-link p-1 ps-" href="/pages/login.html">
+                  <button
+                  type="button"
+                  class="btn btn-outline-info ">
+                
+              Ingresar
+                </button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-1 ps-" href="/pages/suscripcion.html">
+                  <button
+                  type="button"
+                  class="btn btn-outline-info">
+                
+              Suscríbete
+                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -286,6 +299,8 @@
                 name="nombre"
                 maxlength="80"
                 minlength="6"
+
+                required
               />
             </div>
             <div>
@@ -298,6 +313,7 @@
                   minlength="2"
                   placeholder="Apellido"
                   name="apellido"
+                  required
                 />
               </div>
               <div class="mb-3 d-flex flex-column align-items-start">
@@ -309,6 +325,7 @@
                   minlength="2"
                   placeholder="e-mail"
                   name="mail"
+                  required
                 />
               </div>
               <div class="mb-3 d-flex flex-column align-items-start">
@@ -320,15 +337,16 @@
                   minlength="2"
                   placeholder="Contraseña"
                   name="pswd"
+                  required
                 />
               </div>
             </div>
 
-            <select class="form-select form-select-sm bg-dark rounded-3 text-white p-1 m-2" aria-label="form-select-sm example">
-              <option selected>Elegí tu plan</option>
-              <option value="1">Básico ($399)</option>
-              <option value="2">Familiar ($699)</option>
-              <option value="3">Premium ($899)</option>
+            <select required class=" form-select form-select-sm bg-dark rounded-3 text-white p-1 m-2" aria-label="form-select-sm example">
+              <option   value="" disabled selected >Elegí tu plan</option>
+              <option  value="1">Básico ($399)</option>
+              <option  value="2">Familiar ($699)</option>
+              <option  value="3">Premium ($899)</option>
             </select>
 
             <div class="form-check my-auto me-4">
@@ -336,33 +354,25 @@
                 <input
                   class="form-check-input ms-3"
                   type="checkbox"
-                  name="remember"
+                  name="remember" required
                 />
                 Acepto los
                 <a href="/pages/error404.html" class="textoFlow"
                   >Terminos y condiciones</a
                 >
               </label>
-            </div>
-            <a
-              class="pb-3 text-decoration-none letraLogoPrincipal colorDeFlow"
-              href="/pages/error404.html"
-            >
-            <span class="btn">
-              <a
-                href="/pages/error404.html"
-                class="botonSuscribirse mb-5 "
-              >
-                Suscribirme</a
-              >
-            </span>
-            </a>
+            </div>                                      
+            <button type="submit" class="botonSuscribirse mb-5 text-white" >
+           
+                Suscribirme
+            </button>
+            
           </form>
         </div>
       </section>
     </main>
 
-    <!--Pie de Pagina NO MODIFICAR NADA!!-->
+    <!--Pie de Pagina  !!-->
     <footer class="bg-dark">
       <section class="container bg-footer rounded-4">
         <!--Seccion de Links y Redes Sociales-->

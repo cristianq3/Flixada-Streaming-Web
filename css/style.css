@@ -26,9 +26,6 @@ main {
 
 
 /* CARDS contenedores de Peliculas */
-
-
-
 .asideCardHover:hover {
   filter: brightness(130%);
 }
@@ -61,9 +58,16 @@ main {
 
 /* BARRA DE NAVEGACION  (NAVBAR) */
 
-.btn-dark:hover {
-  background-color: #3c4a46db;
+.btn-outline-info {
+color:wheat;
+border:solid 1px #1e9672;
 }
+.btn-outline-info:hover {
+  background-color:#1e9672;
+  color:rgb(255, 255, 255);
+
+  }
+
 
 /* Logo FLIXADA Con gradientes*/
 .logoFlixada {
@@ -103,24 +107,27 @@ main {
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
   color: #57dfb7;
-}
-
- 
+} 
 
 input[type="text"]:focus,
 textarea:focus {
   color: #ffffff;
 }
+input[type="number"]:focus
+{
+  color: #ffffff;
+}
+input[type="number"]:active
+{
+  color:#ffffff;
+}
+
 
 /* Display de Formularios del NAVBAR para que se vea bien en SMALL*/
 
-
 input[placeholder=Buscar]:focus {
   width: 300px;
-
-
 }
-
 
 .formBuscar {
   align-self: center;
@@ -152,7 +159,7 @@ input[placeholder=Buscar]:focus {
   font-weight: bold;
 }
 
-/*** ESTILOS BOTÓN SUSCRIBIRSE que esta en INDEX.html ***/
+/*** ESTILOS BOTÓN SUSCRIBIRSE que esta en INDEX.html y otras paginas ***/
 
 .botonSuscribirse {
   background: #2125297d; /* color de fondo */
@@ -374,6 +381,42 @@ textarea:focus {
   color: var(--bs-card-color);
 }
 
+/* BOTON WHATSAPP CONTACTO*/
+.btn-wtsp {
+  position: fixed
+  ;
+width: 55px;
+height: 55px;
+line-height: 55px;
+bottom: 30px;
+right: 30px;
+background-color: green;
+color: white;
+border-radius: 50%;
+text-align: center;
+font-size: 30px;
+box-shadow: 0px, 1px 10px rgba (0,0,0,0.3);
+z-index: 100;
+}
+
+.chat {
+  position: absolute;
+  top: 35px; 
+  font-size: small;
+}
+
+.btn-wtsp:hover {
+
+  background-color: white;
+color: green;
+
+}
+
+
+
+
+
+
 /* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
 
 /* Dispositivos SMALL */
@@ -402,6 +445,16 @@ textarea:focus {
     padding-top: 18px;
     margin-bottom: 10%px;
   }
+
+  .form-control {
+        width: 200px;
+  }
+
+  .contacto  {
+    font-size: 11px;
+  }
+
+
   /*Cards Responsivas */
   /* letras card*/
   .colorTextoCard {
@@ -431,20 +484,36 @@ textarea:focus {
 }
 
 /* Dispositivos MEDIUM (TABLETS) */
+@media all and (max-width:767px) {
 
+  .videoResponsive {
+      width: 100%;
+      height: 380px;
+object-fit:cover;
+object-position: 50%;
+
+  }
+}
+
+ /* Formularios Responsivos TABLETS */
 @media all and (min-width: 577px) and (max-width: 991px) {
   /* Estilos generales*/
   main {
     padding-top: 55px;
   }
  
-  /* Formularios Responsivos TABLETS */
+ 
   .formBuscar1 {
     display: block;
   }
   .formBuscar2 {
     display: none;
   }
+
+
+  .form-control {
+    width: 200px;
+}
 
   #Plan899 {
     padding-bottom: 0px;
@@ -466,7 +535,7 @@ textarea:focus {
   .formLogin {
     margin-top: auto;
     align-self: center;
-    width: 50%;
+    width: 100%;
     margin-bottom: 10%;
   }
 
