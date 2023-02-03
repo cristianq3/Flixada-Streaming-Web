@@ -24,7 +24,6 @@ main {
   color: #f6f8f7b6;
 }
 
-
 /* CARDS contenedores de Peliculas */
 .asideCardHover:hover {
   filter: brightness(130%);
@@ -59,15 +58,13 @@ main {
 /* BARRA DE NAVEGACION  (NAVBAR) */
 
 .btn-outline-info {
-color:wheat;
-border:solid 1px #1e9672;
+  color: wheat;
+  border: solid 1px #1e9672;
 }
 .btn-outline-info:hover {
-  background-color:#1e9672;
-  color:rgb(255, 255, 255);
-
-  }
-
+  background-color: #1e9672;
+  color: rgb(255, 255, 255);
+}
 
 /* Logo FLIXADA Con gradientes*/
 .logoFlixada {
@@ -81,7 +78,7 @@ border:solid 1px #1e9672;
 
 .logoFlixadaChico {
   font-family: "Righteous", cursive;
-  
+
   background: -webkit-linear-gradient(#00ffd5, #1e9672, #04ffd5);
   -webkit-background-clip: text;
   background-clip: text;
@@ -90,7 +87,6 @@ border:solid 1px #1e9672;
 
 .colorDeFlow {
   color: #57dfb7;
-  
 }
 
 .letraLogoPrincipal {
@@ -107,25 +103,22 @@ border:solid 1px #1e9672;
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
   color: #57dfb7;
-} 
+}
 
 input[type="text"]:focus,
 textarea:focus {
   color: #ffffff;
 }
-input[type="number"]:focus
-{
+input[type="number"]:focus {
   color: #ffffff;
 }
-input[type="number"]:active
-{
-  color:#ffffff;
+input[type="number"]:active {
+  color: #ffffff;
 }
-
 
 /* Display de Formularios del NAVBAR para que se vea bien en SMALL*/
 
-input[placeholder=Buscar]:focus {
+input[placeholder="Buscar"]:focus {
   width: 300px;
 }
 
@@ -136,7 +129,6 @@ input[placeholder=Buscar]:focus {
 .form-control {
   color: #ffffff;
 }
-
 
 .formBuscar1 {
   display: none;
@@ -163,7 +155,7 @@ input[placeholder=Buscar]:focus {
 
 .botonSuscribirse {
   background: #2125297d; /* color de fondo */
-    color: #fffffffc; /* color de fuente */
+  color: #fffffffc; /* color de fuente */
   text-decoration: none;
   border: 1px solid #00bc7dfc; /* tamaño y color de borde */
   padding: 3% 25%;
@@ -230,7 +222,7 @@ input[placeholder=Buscar]:focus {
 .textoCategoria {
   font-size: 29px;
   font-family: righteous, cursive;
-  top:44%;
+  top: 44%;
   left: 0;
   right: 0;
   color: #ffffff3e;
@@ -299,15 +291,12 @@ footer a {
   font-weight: bolder;
 }
 
-
 footer a[href="pages/peliculas.html"] {
   display: none;
-
 }
 
 footer a[href="/pages/peliculas.html"] {
   display: none;
-
 }
 
 /* PAGINA ACERCA DE NOSOTROS*/
@@ -320,8 +309,8 @@ footer a[href="/pages/peliculas.html"] {
 .formLogin {
   align-self: center;
   width: 500px;
-margin-top: 10%;
-  margin-bottom:10%  ;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 input[type="email"]:focus,
@@ -344,8 +333,6 @@ textarea:focus {
 
 /* ESTILOS DE LA PAGINA SUSCRIPCION.html */
 
-
-
 .form-select-sm {
   width: min-content;
 }
@@ -363,7 +350,7 @@ textarea:focus {
   margin-right: 5px;
   margin-left: 5px;
   background-color: #74ebd5;
-  background: -webkit-linear-gradient(#10df9acd, #02a8aacf, #3b9fb5e5); 
+  background: -webkit-linear-gradient(#10df9acd, #02a8aacf, #3b9fb5e5);
 }
 
 .cardPrecioSuscripcion:hover {
@@ -372,7 +359,6 @@ textarea:focus {
 
 .brilloAumentado:hover {
   filter: brightness(1.5);
-
 }
 
 .card-body {
@@ -383,39 +369,31 @@ textarea:focus {
 
 /* BOTON WHATSAPP CONTACTO*/
 .btn-wtsp {
-  position: fixed
-  ;
-width: 55px;
-height: 55px;
-line-height: 55px;
-bottom: 30px;
-right: 30px;
-background-color: green;
-color: white;
-border-radius: 50%;
-text-align: center;
-font-size: 30px;
-box-shadow: 0px, 1px 10px rgba (0,0,0,0.3);
-z-index: 100;
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px, 1px 10px rgba (0, 0, 0, 0.3);
+  z-index: 100;
 }
 
 .chat {
   position: absolute;
-  top: 35px; 
+  top: 35px;
   font-size: small;
 }
 
 .btn-wtsp:hover {
-
   background-color: white;
-color: green;
-
+  color: green;
 }
-
-
-
-
-
 
 /* ESTILOS RESPONSIVOS (MEDIA QUERYs) */
 
@@ -426,7 +404,7 @@ color: green;
 
   main {
     padding-top: 40px;
-  } 
+  }
   /* Navbar */
   nav .navFija {
     position: relative;
@@ -447,13 +425,12 @@ color: green;
   }
 
   .form-control {
-        width: 200px;
+    width: 200px;
   }
 
-  .contacto  {
+  .contacto {
     font-size: 11px;
   }
-
 
   /*Cards Responsivas */
   /* letras card*/
@@ -463,11 +440,10 @@ color: green;
   /*Pagina Suscripciones*/
 
   .sombraTextoSuscripcion {
-    font-size:small;
-   }
+    font-size: small;
+  }
   .cardPrecioSuscripcion {
     width: 90%;
-
   }
   /*Acordion detalle de SERIE*/
 
@@ -484,25 +460,22 @@ color: green;
 }
 
 /* Dispositivos MEDIUM (TABLETS) */
-@media all and (max-width:767px) {
-
+@media all and (max-width: 767px) {
   .videoResponsive {
-      width: 100%;
-      height: 380px;
-object-fit:cover;
-object-position: 50%;
-
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: 50%;
   }
 }
 
- /* Formularios Responsivos TABLETS */
+/* Formularios Responsivos TABLETS */
 @media all and (min-width: 577px) and (max-width: 991px) {
   /* Estilos generales*/
   main {
     padding-top: 55px;
   }
- 
- 
+
   .formBuscar1 {
     display: block;
   }
@@ -510,26 +483,25 @@ object-position: 50%;
     display: none;
   }
 
-
   .form-control {
     width: 200px;
-}
+  }
 
   #Plan899 {
     padding-bottom: 0px;
-    margin-bottom: -18px;;
+    margin-bottom: -18px;
   }
 
   .cardPrecioSuscripcion {
     max-width: 18rem;
-    
+
     border-radius: 5%;
     height: 25rem;
     border: #00ffff29 solid 1px;
     margin-right: 5px;
     margin-left: 5px;
     background-color: #74ebd5;
-    background: -webkit-linear-gradient(#10df9acd, #02a8aacf, #3b9fb5e5); 
+    background: -webkit-linear-gradient(#10df9acd, #02a8aacf, #3b9fb5e5);
   }
 
   .formLogin {
