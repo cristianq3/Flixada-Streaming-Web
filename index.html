@@ -25,7 +25,7 @@
   <body>
     <header>  
 
-      <!-- Barra de Navegacion   -->
+      <!-- Barra de Navegacion No Modificar nada -->
       <nav
         class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top  p-0 m-0"
       >
@@ -94,26 +94,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="pages/peliculas.html">Peliculas</a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link p-1 ps-" href="pages/login.html">
-                  <button
-                  type="button"
-                  class="btn btn-outline-info ">
-                
-              Ingresar
-                </button>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-circle"></i>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-1 ps-" href="pages/suscripcion.html">
-                  <button
-                  type="button"
-                  class="btn btn-outline-info">
-                
-              Suscríbete
-                </button>
-                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                  <li><a class="dropdown-item" href="/pages/login.html">Ingresar</a></li>
+                  <li><a class="dropdown-item " href="/pages/suscripcion.html">Suscribirse</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -123,7 +111,7 @@
 
     <main class="bg-dark  ">
       <!--CARRUSEL CON SLIDER BANNER PRINCIPAL  -->
-      <section class="bg-dark container my-4 " >
+      <section class="bg-dark container my-4">
         <div
           id="carruselVideosPeliculas"
           class="carousel slide container carousel-fade"
@@ -155,7 +143,7 @@
             <div class="carousel-item active">
               <video
                 src="video/Gato con botas3.mp4"
-                class="d-block w-100 videoResponsive"
+                class="d-block w-100"
                 autoplay
                 loop
               ></video>
@@ -171,7 +159,7 @@
             <div class="carousel-item">
               <video
                 src="video/Logan3.mp4"
-                class="d-block w-100 videoResponsive"
+                class="d-block w-100"
                 autoplay
                 loop
               ></video>
@@ -186,7 +174,7 @@
             <div class="carousel-item">
               <video
                 src="video/WandaVision3.mp4"
-                class="d-block w-100 videoResponsive"
+                class="d-block w-100"
                 autoplay
                 loop
               ></video>
@@ -510,7 +498,7 @@
         </article>
       </section>
     </main>
-    <!--Pie de Pagina  !!-->
+    <!--Pie de Pagina NO MODIFICAR NADA!!-->
     <footer class="bg-dark">
       <section class="container bg-footer rounded-4">
         <!--Seccion de Links y Redes Sociales-->
@@ -587,6 +575,6 @@
         </div>
       </section>
     </footer>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
