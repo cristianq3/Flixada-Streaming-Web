@@ -123,6 +123,19 @@ input[type="number"]:active {
 .error404sm {
   display: none;
 }
+
+/* CARRUSEL */
+.video-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.logan {
+  opacity: 0.4;
+}
+
 /* Display de Formularios del NAVBAR para que se vea bien en SMALL*/
 
 
