@@ -220,18 +220,22 @@ input[placeholder="Buscar"]:focus {
 }
 
 .textoCategoria {
-  font-size: 29px;
+  font-size: 3vh;
   font-family: righteous, cursive;
   top: 44%;
   left: 0;
   right: 0;
-  color: #ffffff3e;
-
+  color: #eeececc6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
+  width: 80%;
 }
 
 .textoCategoria:hover {
   color: white;
+  background-color: rgba(0, 0, 0, 0.175);
 }
 
 .listaDetalle {
