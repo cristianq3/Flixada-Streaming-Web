@@ -116,11 +116,15 @@ input[type="number"]:active {
   color: #ffffff;
 }
 
+
+/* ERROR 404 */
+
+.error404sm {
+  display: none;
+}
 /* Display de Formularios del NAVBAR para que se vea bien en SMALL*/
 
-input[placeholder="Buscar"]:focus {
-  width: 300px;
-}
+
 
 .formBuscar {
   align-self: center;
@@ -467,6 +471,14 @@ textarea:focus {
   .textoEpisodio {
     font-size: small;
   }
+
+  .error404md {
+    display:none;
+  }
+
+  .error404sm {
+    display:block;
+  }
 }
 
 /* Dispositivos MEDIUM (TABLETS) */
@@ -534,6 +546,16 @@ textarea:focus {
   .colorTextoCard {
     font-size: large;
   }
+
+  .error404sm {
+    display:none
+  }
+
+  .error404md {
+    display:block;
+  }
+
+
 }
 
 /* Dispositivos Large en adelante PC, TV, etc */
