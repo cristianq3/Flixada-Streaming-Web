@@ -331,6 +331,12 @@ textarea:focus {
   color: #ffffff;
 }
 
+input[type="tel"]:focus,
+textarea:focus {
+  color: #ffffff;
+}
+
+
 .bgHeaderFormLogin {
   border: #00ffff29 solid 1px;
 }
