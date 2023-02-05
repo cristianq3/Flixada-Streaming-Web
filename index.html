@@ -23,11 +23,10 @@
     <title>Inicio - Flixada Streaming</title>
   </head>
   <body>
-    <header>  
-
-      <!-- Barra de Navegacion No Modificar nada -->
+    <header>
+      <!-- Barra de Navegacion  -->
       <nav
-        class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top  p-0 m-0"
+        class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top p-0 m-0"
       >
         <!--LOGO FLIXADA-->
         <div class="container d-flex">
@@ -60,13 +59,9 @@
                 maxlength="125"
               />
               <div class="input-group-append">
-                
                 <button class="btn" type="submit">
-              
                   <i class="bi bi-search text-secondary"></i>
-             
                 </button>
-             
               </div>
             </div>
           </form>
@@ -99,12 +94,26 @@
                 <a class="nav-link" href="pages/peliculas.html">Peliculas</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <i class="bi bi-person-circle"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-                  <li><a class="dropdown-item" href="/pages/login.html">Ingresar</a></li>
-                  <li><a class="dropdown-item " href="/pages/suscripcion.html">Suscribirse</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/login.html"
+                      >Ingresar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/suscripcion.html"
+                      >Suscribirse</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -113,12 +122,12 @@
       </nav>
     </header>
 
-    <main class="bg-dark  ">
+    <main class="bg-dark">
       <!--CARRUSEL CON SLIDER BANNER PRINCIPAL  -->
       <section class="bg-dark container-sm-fluid container-md my-4">
         <div
           id="carruselVideosPeliculas"
-          class="carousel slide  carousel-fade"
+          class="carousel slide carousel-fade"
           data-bs-ride="false"
         >
           <div class="carousel-indicators">
@@ -145,14 +154,10 @@
           </div>
           <div class="carousel-inner rounded-4 sombraRedondeada">
             <div class="carousel-item active">
-              <video
-                class="d-block w-100 videoResponsive"
-                autoplay
-                loop
-              >
-                <source src="video/Gato con botas1.webm" type="video/webm">
-                <source src="video/Gato con botas2.ogv" type="video/ogg">
-                <source src="video/Gato con botas3.mp4" type="video/mp4">
+              <video class="d-block w-100 videoResponsive" autoplay loop>
+                <source src="video/Gato con botas1.webm" type="video/webm" />
+                <source src="video/Gato con botas2.ogv" type="video/ogg" />
+                <source src="video/Gato con botas3.mp4" type="video/mp4" />
                 <p>Su navegador no acepta videos HTML5</p>
               </video>
 
@@ -165,14 +170,10 @@
               </div>
             </div>
             <div class="carousel-item">
-              <video
-                class="d-block w-100 videoResponsive"
-                autoplay
-                loop
-              >
-                <source src="video/Logan1.webm" type="video/webm">
-                <source src="video/Logan2.ogv" type="video/ogg">
-                <source src="video/Logan3.mp4" type="video/mp4">
+              <video class="d-block w-100 videoResponsive" autoplay loop>
+                <source src="video/Logan1.webm" type="video/webm" />
+                <source src="video/Logan2.ogv" type="video/ogg" />
+                <source src="video/Logan3.mp4" type="video/mp4" />
                 <p>Su navegador no acepta videos HTML5</p>
               </video>
               <div class="carousel-caption d-none d-md-block">
@@ -184,14 +185,10 @@
               </div>
             </div>
             <div class="carousel-item">
-              <video
-                class="d-block w-100 videoResponsive"
-                autoplay
-                loop
-              >
-                <source src="video/WandaVision1.webm" type="video/webm">
-                <source src="video/WandaVision2.ogv" type="video/ogg">
-                <source src="video/WandaVision3.mp4" type="video/mp4">
+              <video class="d-block w-100 videoResponsive" autoplay loop>
+                <source src="video/WandaVision1.webm" type="video/webm" />
+                <source src="video/WandaVision2.ogv" type="video/ogg" />
+                <source src="video/WandaVision3.mp4" type="video/mp4" />
                 <p>Su navegador no acepta videos HTML5</p>
               </video>
               <div class="carousel-caption d-none d-md-block">
@@ -567,7 +564,7 @@
       </section>
     </main>
     <!--Pie de Pagina NO MODIFICAR NADA!!-->
-    <footer class="bg-dark ">
+    <footer class="bg-dark">
       <section class="container bg-footer rounded-4">
         <!--Seccion de Links y Redes Sociales-->
         <article class="row d-flex justify-content-evenly align-items-top">

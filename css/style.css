@@ -74,6 +74,7 @@ main {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px #00020149;
 }
 
 .logoFlixadaChico {
@@ -224,7 +225,7 @@ input[type="number"]:active {
 }
 
 .textoCategoria {
-  font-size: 3vh;
+  font-size: 3em;
   font-family: righteous, cursive;
   top: 44%;
   left: 0;
@@ -235,11 +236,12 @@ input[type="number"]:active {
   align-items: center;
   margin: auto;
   width: 80%;
+  text-shadow: 4px 4px 9px #000000;
 }
 
 .textoCategoria:hover {
   color: white;
-  background-color: rgba(0, 0, 0, 0.175);
+  
 }
 
 .listaDetalle {
