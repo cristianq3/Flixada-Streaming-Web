@@ -35,8 +35,8 @@ main {
 }
 
 .fondoTransparenteCard :hover {
-  filter: brightness(105%);
-  box-shadow: 0px 0px 5px 1px rgba(38, 255, 186, 0.447);
+  filter: brightness(110%);
+  box-shadow: 0px 0px 5px 1px rgba(38, 255, 186, 0.507);
 }
 
 .colorTextoCard:hover {
@@ -133,7 +133,7 @@ input[type="number"]:active {
 }
 
 .logan {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 /* Display de Formularios del NAVBAR para que se vea bien en SMALL*/
@@ -236,7 +236,7 @@ input[type="number"]:active {
 }
 
 .textoCategoria {
-  font-size: 3em;
+  font-size: 2em;
   font-family: righteous, cursive;
   top: 44%;
   left: 0;
@@ -460,12 +460,12 @@ textarea:focus {
   /*Cards Responsivas */
   /* letras card*/
   .colorTextoCard {
-    font-size: medium;
+    font-size: large;
   }
   /*Pagina Suscripciones*/
 
   .sombraTextoSuscripcion {
-    font-size: small;
+    font-size: medium;
   }
   .cardPrecioSuscripcion {
     width: 90%;
